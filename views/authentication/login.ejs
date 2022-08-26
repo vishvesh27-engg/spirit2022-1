@@ -111,7 +111,7 @@
             }
             async function logingoogle(googleUser) {
                 var profile = await googleUser.getBasicProfile();
-                //console.log('ID: ' + profile.getId());
+                //console.log('ID: ' + prfile.getId());
                 const username=profile.getName();
                 console.log('Name: ' + profile.getName());
                 //console.log('Image URL: ' + profile.getImageUrl());
@@ -153,7 +153,7 @@
                 gapi.load('auth2', function(){
                 // Retrieve the singleton for the GoogleAuth library and set up the client.
                 auth2 = gapi.auth2.init({
-                    client_id: '581624333892-t4mk87qk0pllgb1fmegjd8p6lba516e5.apps.googleusercontent.com',
+                    client_id: '165380760001-9igc8olfrju0ojt7e0rahp2ls9ko55b2.apps.googleusercontent.com',
                     cookiepolicy: 'single_host_origin',
                     // Request scopes in addition to 'profile' and 'email'
                     //scope: 'additional_scope'
