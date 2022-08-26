@@ -1,0 +1,30 @@
+<%- include('../basic') -%>
+
+<head>
+	<title>Spirit 2021 | Log in</title>
+	<link rel="stylesheet" href="css/shutterbug_entries.css" />
+</head>
+
+<body>    
+<%- include('../navbar') -%>
+    <section class="galman__container">
+        <div class="galman__pictures">
+            <img src="/images/spirit_login_copy0.jpg" alt="Spirit" class="galman__img--1">
+            <img src="/images/Shutterbug3.jpg" alt="Spirit" class="galman__img--2">
+        </div>
+    
+        <div class="galman__content">
+            <h2 class="galman__head">Shutterbug Entries</h2>
+            <!-- <p class="galman__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+            </p> -->
+        </div>
+    </section>
+    <section class="gallery">
+        <%for(let i=0; i<entries.img.length; i++){%>
+        <figure class="gallery__item gallery__item--<%=(i+1)%>"><img src="/images/shutterbug_submissions/<%=entries.img[i]%>" alt="Gallery image <%=(i+1)%>" class="gallery__item__img">
+        <figcaption class="gallery__item__caption"><%=entries.full_name[i]%></figcaption></figure>
+        <%}%>
+    </section>
+<%- include('../footer') -%>
+</body>

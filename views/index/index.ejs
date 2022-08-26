@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../basic') -%>
+<head>
+	<link rel="stylesheet" href="css/landing_style.css" />
+	<link rel="stylesheet" href="css/treasurehunt_style.css"/>
+</head>
+
+<body>
+	<%- include('../navbar') -%>
+	
+	<section class="landing">
+		
+		<div class="landing-text">
+			
+			<div class="landing-text-head">
+				Spirit 2021
+			</div>
+			
+			<div class="landing-text-desc">
+				Spirit is the annual sports festival of IIT Guwahati which organizes several
+				competitive events. Spirit is a platform for all budding sportspersons...
+				<a href="aboutus" class="landing-text-desc-read">Read More</a>
+				<div><a class="landing-to-popup" href="#popup-th">Click here to try out our Treasure Hunt!</a></div>
+				
+			    <!-- <div class="treasure-hunt-link carousel-text">
+                <span style="color:beige; padding-right: 1px;">
+                  <i class="fas fa-gem"></i>
+                </span>
+                <a data-bs-toggle="modal" data-bs-target="#expand-modal-hunt">
+                    click here to try out our treasure hunt!
+                </a>
+            	</div> -->
+				
+			</div>
+		</div>
+		<!--<div>
+			//include treasure hunt here
+		</div>-->
+		  
+		<div class="landing-circle">
+			<img class="landing-circle-img" src="images/Group 1_.png" alt="Circle">
+		</div>
+		
+		<div class="landing-image">
+			<img class="landing-image-img" src="" alt="Circle">
+		</div>
+		
+		<div class="landing-image-mobile">
+            <img class="landing-image-img-mobile" src="images/img1-m.png" alt="Circle">
+        </div>
+		
+		<div class="popup" id="popup-th">
+            <div class="popup__content">
+                <a href="#landing" class="popup__close">&times;</a>
+                <div class="popup__head">
+                    Decode the cipher below and reach your destination!
+                </div>
+                <div class="popup__cipher">
+                    YYIYAM AW NL TIP
+                </div>
+                <!-- <div class="popup__hint"> -->
+                    <input type="checkbox" class="popup__hint-check" name="" id="hint">
+                    <label class="popup__hint-label" for="hint"><i class="fas fa-lightbulb fa-5x"></i></label>
+                <!-- </div> -->
+                <div class="popup__hint-box">
+                    <div class="popup__hint-box-cont">
+                        <div class="popup__hint-box-img"><i class="fas fa-cut fa-5x"></i></div>
+                        <div class="popup__hint-box-img">
+                            <!-- <i class="fas fa-box-open fa-5x"></i> -->
+                            <img class="popup-box-img" src="images/box.png" alt="box">
+                        </div>
+                        <div class="popup__hint-box-txt">Cipher</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+		
+
+	</section>
+	
+
+	<section class="updates">
+		<%- include('updates') -%>
+	</section>
+	
+	<section class="events">
+
+		<div class="events-title">
+			<h1>Events</h1>
+		</div>
+
+		<div class="events-container">
+
+			<div class="events-slider">
+				<%- include('events_landingpage') -%>
+			</div>
+
+		</div>
+
+		<div class="events-navigationB">
+			<button class="events-navigationB-button events-navigationB--1"></button>
+			<button class="events-navigationB-button events-navigationB--2"></button>
+			<button class="events-navigationB-button events-navigationB--3"></button>
+			<button class="events-navigationB-button events-navigationB--4"></button>
+
+		</div>
+	</section>
+	
+    <!-- Events Mobile View -->
+     <section class="events-m">
+
+         <div class="events-m-title">
+			 <h1>Events</h1>
+		</div>
+		
+        <div class="events-m-container">
+			
+              <div class="events-m-slider"> 
+                <%- include('events_landingpage_m') -%>
+              </div>
+			
+        </div>
+    </section>
+	<section class="aboutUs">
+		<div class="aboutUs-img"></div>
+		<div class="aboutUs-text">
+			<div class="aboutUs-text-img"><img src="images/quote.png" class="img-fluid"></div>
+			Spirit is the annual sports festival of IIT Guwahati which organizes several competitive...
+		</div>
+		<div class="aboutUs-button"><a href="aboutus"><button class="aboutUs-button-btn">About Us</button></a></div>
+	</section>
+	
+
+
+	
+	<%- include('../footer') -%>
+
+	<script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
+

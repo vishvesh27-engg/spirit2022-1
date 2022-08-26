@@ -1,0 +1,185 @@
+body {
+    background-color: #0a0a0a;
+	font-family: "Poppins", sans-serif;
+}
+.abtus-title{
+    color:#c567ff;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+	font-size:xx-large;
+ }
+
+.topic-info {
+    background-color: #272727;
+    color: #fff;
+    height: 450px;
+    text-align: center;
+    overflow: auto;
+}
+
+.topic-data {
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+	font-size:2rem;
+}
+
+.topic-button-grid {
+    position: relative;
+    top: 8%;
+    margin-bottom: 7%;
+}
+
+.topic-button {
+    padding: 10px 22px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: none;
+    border-radius: 0;
+}
+
+.spirit-title{
+	font-size: 3rem;
+}
+
+.topic-button:hover,
+.topic-button:focus {
+    border: none;
+    border-bottom: solid 2px #C567FF;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-weight: 540;
+    font-size: 1.5rem;
+}
+
+.topic-button:not(:disabled):not(.disabled).active,
+.show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #272727;
+    border: none;
+    border-bottom: solid 2px #C567FF;
+}
+
+.topic-button:active {
+    background-color: transparent;
+    border: none;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 24px;
+    right: 16px;
+    color: white;
+  }
+  
+
+  #aboutbtn {
+    background-color: #c567ff;
+    color: black;
+  }
+  
+  #aboutbtn:hover {
+    background-color: #8d8b8b;
+    color: white;
+  }
+
+  .bg-bottom{
+    background: linear-gradient(73.92deg, #404040 1.37%, #0A0A0A 90.8%);
+  }
+
+  .team-title{
+    color:#c567ff;
+    padding-top: 80px;
+    padding-bottom: 40px;
+	font-size:xx-large;
+  }
+
+ .member-title{
+	color:#FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	font-size:large;
+	font-weight:500;
+  }
+  .member-name{
+    color:#FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	font-size:large;
+	font-weight:400;
+  }
+
+ .member-info{
+	color:#FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	font-size:small;
+	 font-weight:300;
+ }
+
+  .member-div{
+    margin-bottom:20px;
+  }
+
+  .teamimages{
+    height:275px;
+    width:275px;
+  }
+
+  .space{
+      padding-top: 60px;
+  }
+
+@media(max-width:1000px){
+	
+  .topic-data {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+	font-size:2rem;
+  }
+  .teamimages{
+    height:220px;
+    width:220px;
+  }
+}
+
+@media(max-width:455px){
+	
+  .topic-data {
+    width: 88%;
+    margin: auto;
+    overflow: auto;
+	font-size:2rem;
+  }
+  .teamimages{
+    height:160px;
+    width:160px;
+  }
+}
+
+@media(max-width:467px){
+	.img-med{
+		padding-bottom:41px;
+	}
+}
+
+@media(max-width:412px){
+	.img-412{
+		padding-bottom:41px;
+	}
+}
+
+@media(max-width:405px){
+	.img-small{
+		padding-bottom:41px;
+	}
+}
+

@@ -1,0 +1,122 @@
+        <!-- code for modal content -->
+
+        <div class="modal fade" id="expand-modal-crick" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="container-fluid">
+                        <div class="expand-container">
+                            <div class="img-div">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close"></button>
+                                <img src="images/Cricketcard.png" alt="..." class="expand-img" />
+                            </div>
+
+                            <div class="text-line">
+                                <div class="left-text"><strong>Cricket</strong></div>
+                                <div class="right-text"><strong> 1-20 Oct</strong></div>
+                            </div>
+
+							<p class="give-margin">Cricket, one of the most popular sport in India reflects the spirit of the nation and its people in every corner of India. Cricket is played nationwide, at each and every corner of India then it may be the children playing or the senior citizens too.  And of course this sport finds a place in Athlos Arena testing the bowling skills of every participant. Take part, bowl and hit the stumps.</p>
+							
+							<div class="lastdate-line">
+                                <div class="left-text">Last date for registration</div>
+                                <div class="right-text">17 Oct</div>
+                            </div>
+							
+							<p class="text-center prize">
+								<b>Prize Pool of 50k</b>
+							</p>
+							
+							<p class="text-center contact">
+								For any queries contact our Public Relations Team
+								<br><b>Email ID:</b> publicrelation.spirit@gmail.com
+								<br><b>Contact No.:</b> Saurabh Kamble +91 93593 11460
+							</p>
+                            
+                            <p class="text-center"> 
+                                <%if (logged_in){%>
+                                    
+                                    <%if((user.events_registered.includes("athlos - cricket") || user.events_registered.includes("athlos - football") || user.events_registered.includes("athlos - volleyball") || user.events_registered.includes("athlos - badminton") || user.events_registered.includes("athlos - lawn_tennis") || user.events_registered.includes("athlos - table_tennis") || user.events_registered.includes("athlos - carrom"))){%>
+                                    <p class="text-center center-block contact">
+										<b>Thank you for showing interest!
+										<br> Our team will contact your college soon.</b>
+									</p>
+                                    <%}else{%>
+                                        <p class="text-center center-block contact">
+                                            <b>Registrations closed</b>
+                                        </p>
+                                    <%}%>
+                                
+                                <%}else{%>
+                                    <p class="text-center center-block contact">
+                                        <b>Registrations closed</b>
+                                    </p>
+                                <%}%>
+                                </p><br>
+							
+							<a target="_blank" href="https://drive.google.com/drive/folders/18j2YTonCnIv3SxcH2za3UFbVPIAj6GVA?usp=sharing" style="text-decoration:none"><button type="button"  class="btn btn-primary btn-lg register-button-athlosarena center-block">
+								View Rulebook
+								</button></a>
+							
+							
+							
+							 <a id="btnParty" type="button" data-bs-toggle="modal" data-bs-target="#congratulationsModal"><img src="images/sachin_sign.png" alt="" class="sachin-sign"></a>
+								
+								
+                            <div id="tsparticles"></div>
+								
+								
+
+							
+                    	</div>					
+                	</div>
+             	</div>
+        	</div>
+    	</div>
+
+        <div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered congrats-container">
+                <div class="modal-content congratsmodal-box">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="modal-body">
+                        <h5 class="congrats-title" id="exampleModalLabel">Congratulations on finding the treasure!
+                            <br> Click below for your reward.</h5>
+                    </div>
+
+                    <div>
+                        <a href="images/treasure_reward.png" download class="sachin-link" style="">
+                            <button type="button" id="reward-btn" class="btn btn-primary btn-sm register-button center-block ">Reward</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-confetti/dist/tsparticles.preset.confetti.bundle.min.js"></script>
+
+        <script>
+            btnParty.addEventListener("click", () => {
+                confetti("tsparticles", {
+                    angle: 45,
+                    count: 25,
+                    position: {
+                        x: 30,
+                        y: 78
+                    },
+                    spread: 90,
+                    startVelocity: 120,
+                    decay: 0.9,
+                    gravity: 0,
+                    drift: 0,
+                    ticks: 150,
+                    colors: ["#fff", "#000", "#00f", "#f00", "#ff0"],
+                    shapes: ["square", "star"],
+                    scalar: 1,
+                    zIndex: 2000,
+                    disableForReducedMotion: true
+                });
+            });
+        </script>

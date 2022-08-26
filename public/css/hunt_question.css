@@ -1,0 +1,46 @@
+body{
+  text-align: center;
+  background-color: #333;
+  padding-top: 10%;
+}
+
+
+.submit-btn{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 5px 14px;
+  background-color: #C567FF;
+  border-radius: 6%;
+  border: none;
+}
+
+.ans-heading{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.ans-col{
+  vertical-align: middle;
+  width: 30%;
+  background-color: aliceblue;
+  margin-top: 50px auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.ans-container{
+  text-align: center !important;
+}
+
+@media (max-width:450px){
+  .ans-col{
+    width: 50%;
+  }
+}

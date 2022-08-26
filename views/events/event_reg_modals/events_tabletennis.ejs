@@ -1,0 +1,63 @@
+        <!-- code for modal content -->
+
+        <div class="modal fade" id="expand-modal-tabletennis" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="container-fluid">
+                        <div class="expand-container">
+                            <div class="img-div">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close"></button>
+                                <img src="images/Tabletenniscard.png" alt="..." class="expand-img" />
+                            </div>
+
+                            <div class="text-line">
+                                <div class="left-text"><strong>Table Tennis</strong></div>
+                                <div class="right-text"><strong> 1-20 Oct</strong></div>
+                            </div>
+
+                            <p class="give-margin">Table Tennis, remarkably a fast- paced game testing the reflex and creativity of players to a large extent is one of the fastest growing sports in India, . Athlos Arena keeping up this trend, introduces an event challenging for the cup pong and the ping pong game. So play, compete and rule the ping pong world.
+							</p>
+							<div class="lastdate-line">
+                                <div class="left-text">Last date for registration</div>
+                                <div class="right-text">17 Oct</div>
+                            </div>
+							
+							<p class="text-center prize">
+								<b>Prize Pool of 50k</b>
+							</p>
+							
+							<p class="text-center contact">
+								For any queries contact our Public Relations Team
+								<br><b>Email ID:</b> publicrelation.spirit@gmail.com
+								<br><b>Contact No.:</b> Saurabh Kamble +91 93593 11460
+							</p>
+                            
+                            <p class="text-center"> 
+                                <%if (logged_in){%>
+                                    
+                                    <%if((user.events_registered.includes("athlos - cricket") || user.events_registered.includes("athlos - football") || user.events_registered.includes("athlos - volleyball") || user.events_registered.includes("athlos - badminton") || user.events_registered.includes("athlos - lawn_tennis") || user.events_registered.includes("athlos - table_tennis") || user.events_registered.includes("athlos - carrom"))){%>
+                                    <p class="text-center center-block contact">
+										<b>Thank you for showing interest!
+										<br> Our team will contact your college soon.</b>
+									</p>
+                                    <%}else{%>
+                                        <p class="text-center center-block contact">
+                                            <b>Registrations closed</b>
+                                        </p>
+                                    <%}%>
+                                
+                                <%}else{%>
+                                    <p class="text-center center-block contact">
+                                        <b>Registrations closed</b>
+                                    </p>
+                                <%}%>
+                                </p><br>
+							
+							<a target="_blank" href="https://drive.google.com/drive/folders/18j2YTonCnIv3SxcH2za3UFbVPIAj6GVA?usp=sharing" style="text-decoration:none"><button type="button"  class="btn btn-primary btn-lg register-button-athlosarena center-block">
+								View Rulebook
+								</button></a>
+                    	</div>
+                	</div>
+             	</div>
+        	</div>
+    	</div>

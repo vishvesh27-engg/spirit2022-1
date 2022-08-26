@@ -1,0 +1,64 @@
+        <!-- code for modal content -->
+
+        <div class="modal fade" id="expand-modal-cricketworkshop" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="container-fluid">
+                        <div class="expand-container-big">
+                            <div class="img-div">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close"></button>
+                                <img src="images/CricketworkshopCard.png" alt="..." class="expand-img" />
+                            </div>
+
+                            <div class="text-line">
+                                <div class="left-text"><strong>Cricket Workshop</strong></div>
+                                <div class="right-text"><strong> 23 Oct</strong></div>
+                            </div>
+
+                            <p class="give-margin">Online sports workshop has been one of the most popular workshops in the virtual College. Sports have always been a part of our lives. However, in today’s world, it is hard to find the time and space for this. Spirit’21, IIT Guwahati brings "Virtual Cricket Workshop" letting you experience the joy of cricket without even stepping out of your room.
+							</p>
+							<!--<div class="lastdate-line">
+                                <div class="left-text">Last date for registration</div>
+                                <div class="right-text">14 Oct</div>
+                            </div>
+							
+							<p class="text-center prize">
+								<b>Prize Pool of 5k</b>
+							</p>-->
+							
+							<!-- <button type="button" class="btn btn-primary btn-lg coming-soon center-block">COMING SOON!</button> -->
+							<!-- Add the ejs code from ipl modal here  -->
+							
+							<p class="text-center"> 
+							<%if (logged_in){%>
+								
+							    <%if(user.events_registered.includes("cricket_workshop")){%>
+								<button type="button" class="btn btn-primary btn-lg register-button center-block">
+								ALREADY REGISTERED
+								</button>
+								<%}else{%>
+								<a href="events/register/cricket_workshop" style="text-decoration:none"><button type="button" style="left:43%"class="btn btn-primary btn-lg register-button center-block">
+								REGISTER
+								</button></a>
+								<%}%>
+							
+							<%}else{%>
+							<a href="login" style="text-decoration:none"><button type="button"  class="btn btn-primary btn-lg register-button center-block">
+								LOGIN TO REGISTER
+								</button></a>
+							<%}%>
+							</p>
+							<!-- <a style="text-decoration:none"><button type="button"  class="btn btn-primary btn-lg register-button-closed center-block">
+								REGISTRATIONS CLOSED 
+								</button></a> -->
+							
+							<!-- <a target="_blank" href="https://drive.google.com/drive/folders/18j2YTonCnIv3SxcH2za3UFbVPIAj6GVA?usp=sharing" style="text-decoration:none"><button type="button"  class="btn btn-primary btn-lg register-button-rulebook center-block">
+								View Rulebook
+							</button></a></p> -->
+							
+                    	</div>
+                	</div>
+             	</div>
+        	</div>
+    	</div>
+		

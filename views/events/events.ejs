@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../basicwlb') -%>
+<head>
+	<link rel="stylesheet" href="css/events_style.css" />
+</head>
+<body>
+	<!-- NAVBAR CODE -->
+	<%- include('../navbar-nonsticky') -%>
+
+	<!--EVENTS-->
+	
+
+	<div class="eventsbg container pb-5">
+	<h1 class="events-heading pt-5">EVENTS</h1>
+		
+		<div>
+			<%- include('ongoing_events') -%>		
+		</div>
+
+		<div>
+			<%- include('upcoming_events') -%>		
+		</div>
+
+		<div>
+			<%- include('completed_events') -%>
+		</div>
+	</div>
+
+
+	<!--FOOTER-->
+	<%- include('../footer') -%>
+
+	
+
+</body>
+</html>

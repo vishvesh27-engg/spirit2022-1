@@ -1,0 +1,40 @@
+body{
+  text-align: center;
+  background-color: #333;
+  padding-top: 10%;
+}
+
+
+.submit-btn{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 5px 14px;
+  background-color: #C567FF;
+  border-radius: 6%;
+  border: none;
+}
+
+.ans-heading{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.ans-container{
+  text-align: center ;
+}
+
+label{
+	min-width: 14%;
+	margin: 10px;
+	color: aliceblue;
+  	font-family: sans-serif;
+	text-align: left;
+}
+input{
+	margin: 10px;
+}

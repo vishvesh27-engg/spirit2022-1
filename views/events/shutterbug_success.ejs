@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- SPIRIT LOGO -->
+    <link rel="shortcut icon" type="image/png" href="images/logo.jpg" />
+
+    <!-- SPIRIT TITLE -->
+    <title>Spirit IIT Guwahati</title>
+       <style>
+		   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  overflow-y: auto;
+  background: #0a0a0a;
+}
+
+.title1 {
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5vh;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.title2 {
+  margin: auto;
+  margin-bottom: 6vh;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.3vh;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.image {
+  /* 845x563 - 1920x1080 */
+  /* 845/1920 vw & 563/1920 vw */
+  margin: auto;
+  width: 44vw;
+  height: 29.3vw;
+
+  background-image: url("/images/event-reg-success.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.goto {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  margin-top: 6.3vh;
+  margin-bottom: 0.8vh;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.home {
+  justify-content: center;
+  padding: 1vh 1.56vw;
+  margin-bottom: 8vh;
+  background: #c567ff;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vh;
+  text-align: center;
+  color: #0a0a0a;
+}
+
+@media screen and (max-device-width: 480px) {
+  .image {
+    width: 44vw;
+    height: 30vh;
+  }
+}
+
+		</style>
+    </head>
+    <body>
+        <div class="root">
+			<center>
+			  <p class="title1">
+				<%=mssg%>
+			  </p>
+				<!-- <p class="title2">Please check your email for confirmation.</p> -->
+				<div class="image"></div>
+				<h1 class="goto">Go To</h1>
+				<center>
+				  <button class="home" id="#home" onclick="window.location.replace(`/`)">Home</button>
+				</center>
+			</center>
+		</div>
+		
+	<script>
+    </script>
+
+    </body>
+</html>

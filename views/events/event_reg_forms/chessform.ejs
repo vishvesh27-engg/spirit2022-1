@@ -1,0 +1,28 @@
+<div id="Chess" >
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Full Name</label>
+        <input type="text" autocomplete="off" id="full_name5" value="<%=user.username%>" required class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">School/College </label>
+        <input type="text" autocomplete="off" id="college5" value="<%=user.collegename%>" required class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Email Address </label>
+        <input type="email" id="email_address5" name="name1" value="<%=user.email%>"required  class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Contact Number </label>
+        <input type="text" id="contact_number5" name="name2" value="<%=user.phno%>"required  class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Chess.com Username </label>
+        <input type="text" id="chess_username" name="name2" value=""required  class="formFieldInput" />
+        <div class="formFieldLabel2">Dont have one? Create a profile <a target="_blank" href="https://www.chess.com/register?returnUrl=https://www.chess.com/">here</a></div>
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Campus Ambassador ID (optional)</label>
+        <input type="text" id="amb_id5" name="amb_id" value=""  class="formFieldInput" />
+    </div>
+    <input type="submit" class="formSubmit" value="Register" />
+</div>

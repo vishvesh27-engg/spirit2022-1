@@ -1,0 +1,278 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7; }
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #0a0a0a; }
+
+.login-page {
+  height: min-content;
+  display: grid;
+  grid-template-columns: 9.7fr 7fr;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .login-page {
+      height: min-content;
+      padding: 0rem 0 3rem 0; } }
+  @media (max-width: 56.25em) {
+    .login-page {
+      height: min-content;
+      padding: 5rem 0 3rem 0; } }
+  @media (max-width: 46.875em) {
+    .login-page {
+      display: block;
+      height: min-content;
+      padding: 5rem 0 3rem 0; } }
+  @media (max-width: 37.5em) {
+    .login-page {
+      height: min-content;
+      padding: 5rem 0 3rem 0; } }
+
+.login-page-text {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: white;
+  font-size: 1.8rem; }
+
+.login-image {
+  overflow: hidden;
+  position: relative;
+  background-image: url("../images/spirit_login.jpg");
+  background-size: cover;
+  background-position: right; }
+  @media (max-width: 46.875em) {
+    .login-image {
+      display: none; } }
+
+.login-head {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-left: 20%;
+  margin-top: 7%; }
+  @media (max-width: 46.875em) {
+    .login-head {
+      margin-top: 13%; } }
+  @media (max-width: 37.5em) {
+    .login-head {
+      width: 66%;
+      margin-left: 16%; } }
+
+#goomgle {
+  color: white;
+  font-size: 1.5rem; }
+
+.login-content {
+  padding: 3rem 0 12rem 0; }
+  @media (max-width: 75em) {
+    .login-content {
+      padding-bottom: 15rem;
+      padding-top: 4rem; } }
+  @media (max-width: 56.25em) {
+    .login-content {
+      padding-bottom: 15rem;
+      padding-top: 2.7rem; } }
+  @media (max-width: 37.5em) {
+    .login-content {
+      padding: 0rem; } }
+
+.login {
+  margin-top: 10%;
+  position: relative;
+  display: inline-block;
+  width: 58%;
+  margin-left: 21%; }
+  @media (max-width: 37.5em) {
+    .login {
+      width: 66%;
+      margin-left: 17%;
+      margin-top: 8%; } }
+  .login-with, .login-with:link, .login-with:visited {
+    color: white;
+    text-decoration: none;
+    position: relative; }
+  .login-with-btn {
+    width: 100%;
+    color: white;
+    background-color: inherit;
+    text-transform: none;
+    text-decoration: none;
+    padding: 1.7rem 2rem;
+    display: inline-block;
+    border-radius: 0.7rem;
+    font-size: 1.55rem;
+    border: solid 1.5px #e5e5e5;
+    margin-bottom: 2.5rem; }
+    .login-with-btn:hover {
+      border: 1.5px solid #c567ff;
+      cursor: pointer; }
+    .login-with-btn:focus {
+      border: 1.5px solid #c567ff;
+      cursor: pointer; }
+
+.login-partition {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  text-align: center; }
+
+.login-inp {
+  margin-top: 7%; }
+
+.login__group__row:not(:last-child) {
+  margin-bottom: 1rem; }
+  @media (min-width: 112.5em) {
+    .login__group__row:not(:last-child) {
+      margin-bottom: 2.5rem; } }
+
+.login__group__row {
+  margin: 0 auto;
+  width: 100%; }
+
+.login__input {
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.85rem 1.7rem;
+  font-family: inherit;
+  border-radius: 7px;
+  background-color: inherit;
+  width: 58%;
+  margin-left: 21%;
+  display: block;
+  transition: all 0.3s;
+  border: solid 0.5px #e5e5e5; }
+  @media (max-width: 37.5em) {
+    .login__input {
+      width: 66%;
+      margin-left: 17%; } }
+  .login__input:focus {
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(80, 203, 147, 0.1);
+    border: 2px solid #c567ff; }
+  .login__input:focus:invalid {
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #c567ff; }
+  .login__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.8); }
+
+.login__label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 23%;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: rgba(255, 255, 255, 0.8); }
+
+.login__input:placeholder-shown + .login__label {
+  opacity: 0;
+  visibility: hidden; }
+
+.login-rf {
+  display: inline-block;
+  width: 60%;
+  margin-left: 20%; }
+
+.loginpg-button {
+  display: inline-block;
+  width: 58%;
+  margin-left: 21%; }
+  @media (max-width: 37.5em) {
+    .loginpg-button {
+      width: 66%;
+      margin-left: 17%; } }
+  .loginpg-button-btn, .loginpg-button-btn:link, .loginpg-button-btn:visited {
+    background-color: #c567ff;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    font-size: 2rem;
+    color: #0a0a0a;
+    border: none;
+    cursor: pointer; }
+  .loginpg-button-btn:hover, .loginpg-button-btn:focus {
+    transform: translateY(-2px); }
+  .loginpg-button-btn:active, .loginpg-button-btn:focus {
+    color: #0a0a0a;
+    background-color: #c567ff;
+    outline: none;
+    transform: translateY(-0.5px); }
+
+.login-rf {
+  margin-top: 0.5rem;
+  display: inline-block;
+  width: 58%;
+  margin-left: 21%;
+  margin-bottom: 3.5rem;
+  font-size: 1.2rem; }
+  @media (max-width: 37.5em) {
+    .login-rf {
+      width: 66%;
+      margin-left: 17%; } }
+  .login-rf-p {
+    display: inline;
+    color: white; }
+    .login-rf-p-label {
+      margin-left: 3px; }
+    .login-rf-p-inp {
+      color: black;
+      display: inline-block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border: solid 2px #e5e5e5;
+      transform: translateY(0.1rem);
+      border-radius: 0.34rem; }
+  .login-rf-f {
+    float: right; }
+    .login-rf-f, .login-rf-f:link, .login-rf-f:visited {
+      color: #c567ff;
+      text-decoration: none; }
+
+.create-acc {
+  display: inline-block;
+  width: 58%;
+  color: white;
+  margin-left: 21%;
+  margin-top: 1.5rem; }
+  @media (max-width: 37.5em) {
+    .create-acc {
+      width: 66%;
+      margin-left: 17%; } }
+  .create-acc-text {
+    font-size: 1.1rem; }
+  .create-acc-link, .create-acc-link:link, .create-acc-link:visited {
+    color: #c567ff;
+    text-decoration: none; }
+
+

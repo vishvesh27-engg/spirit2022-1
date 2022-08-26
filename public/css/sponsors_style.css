@@ -1,0 +1,543 @@
+.sponsors-container {
+  background-image: linear-gradient(73.92deg, #404040 1.37%, #0a0a0a 90.8%); }
+
+.sponsors-heading {
+  color: #c567ff;
+  font-size: 4.3rem;
+  font-weight: 600;
+  padding: 4.5rem 0;
+  text-align: center; }
+  @media (max-width: 56.25em) {
+    .sponsors-heading {
+      padding: 8.5rem 0 4.5rem 0; } }
+  @media (max-width: 37.5em) {
+    .sponsors-heading {
+      font-size: 4rem; } }
+
+.sponsors {
+  margin: 0 auto;
+  padding-bottom: 8rem;
+  display: grid;
+  width: 65%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.7rem;
+  color: #c567ff;
+  font-weight: 400;
+  font-size: 2.7rem; }
+  @media (max-width: 75em) {
+    .sponsors {
+      font-size: 2.2rem; } }
+  @media (max-width: 23.43em) {
+    .sponsors {
+      font-size: 1.9rem; } }
+  .sponsors-1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative; }
+    .sponsors-1-i-img {
+      height: 50%;
+      margin-top: 15%;
+      margin-left: 5%; }
+      @media (max-width: 75em) {
+        .sponsors-1-i-img {
+          height: 45%;
+          margin-top: 19%;
+          margin-left: 9%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-1-i-img {
+          height: 42%;
+          margin-top: 21.5%;
+          margin-left: 9%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-1-i-img {
+          height: 40%;
+          margin-top: 22%;
+          margin-left: 10%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-1-i-img {
+          height: 40%;
+          margin-top: 24%;
+          margin-left: 10%; } }
+    .sponsors-1-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-1-text {
+          margin-top: 21%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-1-text {
+          margin-top: 21.5%;
+          margin-left: -3%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-1-text {
+          margin-top: 23%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-1-text {
+          margin-top: 28%; } }
+  .sponsors-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-2-i-img {
+      height: 30%;
+      margin-top: 17%;
+      margin-left: 5%; }
+      @media (max-width: 75em) {
+        .sponsors-2-i-img {
+          height: 20%;
+          margin-top: 22%;
+          margin-left: 5%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-2-i-img {
+          height: 18%;
+          margin-top: 21.5%;
+          margin-left: 5%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-2-i-img {
+          height: 18%;
+          margin-top: 25%;
+          margin-left: 6%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-2-i-img {
+          height: 15%;
+          margin-top: 25%;
+          margin-left: 8%; } }
+    .sponsors-2-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-2-text {
+          margin-top: 25%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-2-text {
+          margin-top: 25%;
+          margin-left: -10%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-2-text {
+          margin-top: 26%;
+          margin-left: 0; } }
+      @media (max-width: 23.43em) {
+        .sponsors-2-text {
+          margin-top: 26%; } }
+  .sponsors-3 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-3-i-img {
+      height: 40%;
+      margin-top: 20%;
+      margin-left: 5%; }
+      @media (max-width: 75em) {
+        .sponsors-3-i-img {
+          height: 38%;
+          margin-top: 22%;
+          margin-left: 7%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-3-i-img {
+          height: 33%;
+          margin-top: 22%;
+          margin-left: 7%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-3-i-img {
+          height: 33%;
+          margin-top: 25%;
+          margin-left: 9%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-3-i-img {
+          height: 30%;
+          margin-top: 25%;
+          margin-left: 9%; } }
+    .sponsors-3-text {
+      margin-top: 5%; }
+      @media (max-width: 75em) {
+        .sponsors-3-text {
+          margin-top: 8%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-3-text {
+          margin-top: 4%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-3-text {
+          margin-top: 12%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-3-text {
+          margin-top: 10%; } }
+  .sponsors-4 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-4-i-img {
+      display: inline-block;
+      height: 15%;
+      margin-top: 11%;
+      margin-left: 10%; }
+      @media (max-width: 75em) {
+        .sponsors-4-i-img {
+          height: 14%;
+          margin-top: 11%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-4-i-img {
+          height: 12%;
+          margin-top: 10%;
+          margin-left: 8%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-4-i-img {
+          height: 12%;
+          margin-top: 13%;
+          margin-left: 10%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-4-i-img {
+          height: 10%;
+          margin-top: 13.5%;
+          margin-left: 10%; } }
+    .sponsors-4-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-4-text {
+          margin-top: 23%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-4-text {
+          margin-top: 21.5%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-4-text {
+          margin-top: 25%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-4-text {
+          margin-top: 26%; } }
+  .sponsors-5 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-5-i-img {
+      display: inline-block;
+      height: 23%;
+      margin-top: 13%;
+      margin-left: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-5-i-img {
+          height: 20%;
+          margin-top: 11%;
+          margin-left: 20%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-5-i-img {
+          height: 19%;
+          margin-top: 9%;
+          margin-left: 17%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-5-i-img {
+          height: 19%;
+          margin-top: 13%;
+          margin-left: 20%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-5-i-img {
+          height: 17%;
+          margin-top: 12%;
+          margin-left: 20%; } }
+    .sponsors-5-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-5-text {
+          margin-top: 23%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-5-text {
+          margin-top: 20%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-5-text {
+          margin-top: 26%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-5-text {
+          margin-top: 27%; } }
+  .sponsors-6 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-6-i-img {
+      display: inline-block;
+      height: 7%;
+      margin-top: 25%;
+      margin-left: 10%; }
+      @media (max-width: 75em) {
+        .sponsors-6-i-img {
+          height: 6.5%;
+          margin-top: 22%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-6-i-img {
+          height: 6%;
+          margin-top: 19%;
+          margin-left: 10%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-6-i-img {
+          height: 6%;
+          margin-top: 22%;
+          margin-left: 10%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-6-i-img {
+          height: 5.2%;
+          margin-top: 22%;
+          margin-left: 10%; } }
+    .sponsors-6-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-6-text {
+          margin-top: 30%;
+          margin-left: -23.5%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-6-text {
+          margin-top: 25%;
+          margin-left: -39%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-6-text {
+          margin-top: 30%;
+          margin-left: -28%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-6-text {
+          margin-top: 30%;
+          margin-left: -32%; } }
+  .sponsors-7 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-7-i-img {
+      display: inline-block;
+      height: 4.2%;
+      margin-top: 10%;
+      margin-left: 14.8%; }
+      @media (max-width: 75em) {
+        .sponsors-7-i-img {
+          height: 3.8%;
+          margin-top: 6.7%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-7-i-img {
+          height: 3.1%;
+          margin-top: 5.8%;
+          margin-left: 8%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-7-i-img {
+          height: 3.5%;
+          margin-top: 7.5%;
+          margin-left: 13%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-7-i-img {
+          height: 3%;
+          margin-top: 7.5%;
+          margin-left: 10%; } }
+    .sponsors-7-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-7-text {
+          margin-top: 22.5%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-7-text {
+          margin-top: 19%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-7-text {
+          margin-top: 23%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-7-text {
+          margin-top: 25%; } }
+  .sponsors-8 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-8-i-img {
+      display: inline-block;
+      height: 17%;
+      margin-top: 10%;
+      margin-left: 17%; }
+      @media (max-width: 75em) {
+        .sponsors-8-i-img {
+          height: 14.5%;
+          margin-top: 8%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-8-i-img {
+          height: 12%;
+          margin-top: 6.8%;
+          margin-left: 8%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-8-i-img {
+          height: 14%;
+          margin-top: 9%;
+          margin-left: 14.3%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-8-i-img {
+          height: 12%;
+          margin-top: 9%;
+          margin-left: 10.5%; } }
+    .sponsors-8-text {
+      margin-top: 5.5%; }
+      @media (max-width: 75em) {
+        .sponsors-8-text {
+          margin-top: 7%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-8-text {
+          margin-top: 4%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-8-text {
+          margin-top: 11%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-8-text {
+          margin-top: 13%; } }
+  .sponsors-9 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-9-i-img {
+      display: inline-block;
+      height: 4%;
+      margin-top: 15%;
+      margin-left: 10%; }
+      @media (max-width: 75em) {
+        .sponsors-9-i-img {
+          height: 2.7%;
+          margin-top: 18%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-9-i-img {
+          height: 2.3%;
+          margin-top: 18%;
+          margin-left: 10%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-9-i-img {
+          height: 2.9%;
+          margin-top: 17%;
+          margin-left: 10%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-9-i-img {
+          height: 2.3%;
+          margin-top: 18%;
+          margin-left: 10%; } }
+    .sponsors-9-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-9-text {
+          margin-top: 22%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-9-text {
+          margin-top: 18%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-9-text {
+          margin-top: 24%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-9-text {
+          margin-top: 25%; } }
+  .sponsors-10 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-10-i-img {
+      display: inline-block;
+      height: 15%;
+      margin-top: 15.5%;
+      margin-left: 10%; }
+      @media (max-width: 75em) {
+        .sponsors-10-i-img {
+          height: 11%;
+          margin-top: 17%;
+          margin-left: 10%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-10-i-img {
+          height: 9.5%;
+          margin-top: 17%;
+          margin-left: 10%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-10-i-img {
+          height: 11%;
+          margin-top: 18%;
+          margin-left: 10%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-10-i-img {
+          height: 9%;
+          margin-top: 19%;
+          margin-left: 10%; } }
+    .sponsors-10-text {
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-10-text {
+          margin-top: 21.5%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-10-text {
+          margin-top: 18%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-10-text {
+          margin-top: 24%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-10-text {
+          margin-top: 25%; } }
+  .sponsors-11 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; }
+    .sponsors-11-i-img {
+      display: inline-block;
+      height: 16%;
+      margin-top: 14.5%;
+      margin-left: 15%; }
+      @media (max-width: 75em) {
+        .sponsors-11-i-img {
+          height: 15%;
+          margin-top: 9.7%;
+          margin-left: 12%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-11-i-img {
+          height: 13%;
+          margin-top: 8%;
+          margin-left: 9%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-11-i-img {
+          height: 14.5%;
+          margin-top: 10%;
+          margin-left: 14%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-11-i-img {
+          height: 13%;
+          margin-top: 8.5%;
+          margin-left: 11%; } }
+    .sponsors-11-text {
+      margin-left: -10%;
+      margin-top: 20%; }
+      @media (max-width: 75em) {
+        .sponsors-11-text {
+          margin-left: -10%;
+          margin-top: 21%; } }
+      @media (max-width: 56.25em) {
+        .sponsors-11-text {
+          margin-left: -10%;
+          margin-top: 17%; } }
+      @media (max-width: 37.5em) {
+        .sponsors-11-text {
+          margin-left: -10%;
+          margin-top: 23%; } }
+      @media (max-width: 23.43em) {
+        .sponsors-11-text {
+          margin-left: -10%;
+          margin-top: 23%; } }
+  @media (max-width: 75em) {
+    .sponsors {
+      width: 70%; } }
+  @media (max-width: 56.25em) {
+    .sponsors {
+      width: 74%; } }
+  @media (max-width: 37.5em) {
+    .sponsors {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      width: 85%; } }
+  .sponsors .spon {
+    background-color: #404040;
+    aspect-ratio: 1/0.4;
+    border-radius: 4.5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55); }
+    @media (max-width: 37.5em) {
+      .sponsors .spon {
+        aspect-ratio: 1/0.42; } }

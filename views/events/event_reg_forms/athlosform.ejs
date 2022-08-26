@@ -1,0 +1,46 @@
+<div id="Athlos" >
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Full Name</label>
+        <input type="text" autocomplete="off" id="full_name4" value="<%=user.username%>" required class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">School/College </label>
+        <input type="text" autocomplete="off" id="college4" value="<%=user.collegename%>" required class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Email Address </label>
+        <input type="email" id="email_address4" name="name1" value="<%=user.email%>"required  class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Contact Number </label>
+        <input type="text" id="contact_number4" name="name2" value="<%=user.phno%>"required  class="formFieldInput" />
+    </div>
+    <div  class="athlos_styles">
+        <div>Events you want to participate</div>
+        <div>
+            <input type="checkbox" id="cricket" name="cricket" value="cricket">
+            <label for="cricket"> Cricket</label><br>
+            <input type="checkbox" id="football" name="football" value="football">
+            <label for="football"> Football</label><br>
+            <input type="checkbox" id="volleyball" name="volleyball" value="volleyball">
+            <label for="volleyball"> Volleyball</label><br>
+            <input type="checkbox" id="badminton" name="badminton" value="badminton">
+            <label for="badminton"> Badminton</label><br>
+            <input type="checkbox" id="lawn_tennis" name="lawn_tennis" value="lawn_tennis">
+            <label for="lawn_tennis"> Lawn Tennis</label><br>
+            <input type="checkbox" id="table_tennis" name="table_tennis" value="table_tennis">
+            <label for="table_tennis"> Table Tennis</label><br>
+            <input type="checkbox" id="carrom" name="carrom" value="carrom">
+            <label for="carrom"> Carrom</label><br><br>
+        </div>
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Designation (optional)</label>
+        <input type="text" id="desig4" name="desig4" value=""  class="formFieldInput" />
+    </div>
+    <div class="formFieldRow">
+        <label class="formFieldLabel">Campus Ambassador ID (optional)</label>
+        <input type="text" id="amb_id4" name="amb_id" value=""  class="formFieldInput" />
+    </div>
+    <input type="submit" class="formSubmit" value="Register" />
+</div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<%- include('../basicwlb') -%>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spirit 2021 | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+    </head>
+    <body>
+		<%- include('../navbar-nonsticky') -%>
+        <h1 class="dash_title">Dashboard</h1>
+        <div class="dash_container">
+
+            <div class="user_info">
+                <div class="data_field">
+                    <p class="data_title">Username</p>
+                    <p class="data_text" id="name"><%=user.username%></p>
+                </div>
+                <div class="data_field">
+                    <p class="data_title">College</p>
+                    <p class="data_text" id = "college"><%=user.collegename%></p>
+                </div>
+                <div class="data_field">
+                    <p class="data_title">Email </p>
+                    <p class="data_text" id = "email"><%=user.email%></p>
+                </div>
+				<%if (user.provider=="email"){%>
+            	<div class="data_field">
+                    <p class="data_title">Password</p>
+					<p class="data_text" id="forgot" >
+						<a style="color: #C567FF; cursor: pointer;" href="authapi/getnewpass/<%=user._id%>">Change</a>
+					</p>
+                </div>
+			    <%}%>
+				
+				<%if ((user.isCampusAmb != undefined)&&(user.isCampusAmb==true)){%>
+                    <div class="data_field" style="width: 100%">
+                        <p class="data_title" style="min-width: 14vw">Campus Ambassador Id</p>
+                        <p class="data_text" id="amb_id" ><%=user.campusAmbId%> </p>
+                    </div>
+
+                    <div class="data_field" style="width: 100%">
+                        <p class="data_title" style="min-width: 14vw">Students Registered</p>
+                        <p class="data_text" id="referrals" ><%=user.referrals%> </p>
+                    </div>
+                    <%}%>
+            
+                <div class="data_field">
+                    <p class="data_title"></p>
+                    <p class="data_text" >
+						<a  style="color: #C567FF; cursor: pointer;" href="profile/update/<%=user._id%>">Update profile</a>
+					</p>
+                </div>
+                <div class="data_field">
+                    <p class="data_title"></p>
+                    <p class="data_text">
+						<a style="color: #C567FF; cursor: pointer;" href="logout">Log Out </a>
+					</p>
+                </div>
+            </div>
+            <hr noshade size="1px">
+ 
+            <h3 class="heading">Registered Events</h3>
+           <!-- <%- include('registered_events') -%> -->
+			<div class="reg_events">
+				<% var isIpladded = false;
+				var isShutterbugadded = false;
+                if(user.storerandompassword){ 
+                    isIpladded = true;%>
+                    <img class="event_img" src="images/Ipl.png">
+				<% } %>
+				<!-- Dont include else if part here else only iplauction event will show -->
+				<%if(user.events_registered.length > 0){
+                    var img_src = '';
+                    for (var i=0; i<user.events_registered.length; i++){
+							switch(user.events_registered[i]){
+							case 'shutterbug': {
+								img_src = 'images/ShutterBug.jpg'; 
+								isShutterbugadded = true; 
+								break;
+							}
+							case 'Shutterbug': {
+								img_src = 'images/ShutterBug.jpg'; 
+								isShutterbugadded = true; 
+								break;
+							}
+							case 'marathon': img_src = 'images/Marathon.jpg'; break;
+							case 'fitness': img_src = 'images/Fitness.png'; break;
+							case 'fantasy': img_src = 'images/CricketFantasy.jpg'; break;
+							case 'treasure_hunt': img_src = 'images/Treasure.jpg'; break;
+							case 'cricket_workshop': img_src = 'images/Cricketworkshop.jpg'; break;
+							case 'chess': img_src = 'images/Chess.jpeg'; break;
+							case 'Ipl Auction': 
+								if(isIpladded == false){
+									img_src = 'images/Ipl.png';
+								} 
+								break;
+							}
+                        if(img_src != ''){ %>
+                            <a href="/events" class="event_img">
+                                <img width="100%" src=<%= img_src %> alt="event_poster">
+                            </a>
+                            
+                        <%}else{%>
+                            <div class="data_text event">
+                                <%=user.events_registered[i].replace("Ipl", "IPL") %> 
+                            </div>
+                        <%}%>
+                    
+                <!-- <div class="data_text event">
+                    <%=user.events_registered[i].replace("Ipl", "IPL") %> 	
+                </div> -->	
+				<%}}else if(isIpladded == false){%>
+                    <div class="data_text event">You have not registered for any events.</div>
+                <%}%>
+				
+			</div>
+            
+            <%if(isShutterbugadded){%>
+			<hr noshade size="1px">
+            <h3 class="heading">Submission Info</h3>
+            <div class="sbmsn_info">
+                <p style="font-size: 120%; font-weight: 600">
+					Submissions for shutterbug have begun! 
+				</p> 
+				Head onto shutterbug on the <a style="color: #C567FF; cursor: pointer;" href="/events">events page</a> to submit your entry.
+				<br><br>
+            </div>   
+			<%}%>
+		</div>
+		<%- include('../footer') -%>
+    </body>
+</html>
