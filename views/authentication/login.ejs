@@ -2,6 +2,7 @@
 <head>
 	<title>Spirit 2021 | Log in</title>
 	<link rel="stylesheet" href="css/loginpage_style.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 
@@ -56,7 +57,7 @@
 </body>
 			
 			
-			
+
         <script>
 			// document.getElementById('fb-login').addEventListener('click', function () {
 			// FB.login(statusChangeCallback, { scope: 'email,public_profile', return_scopes: true });
@@ -110,8 +111,10 @@
                 }
             }
             async function logingoogle(googleUser) {
+                console.log("done4");
                 var profile = await googleUser.getBasicProfile();
-                //console.log('ID: ' + prfile.getId());
+                console.log('ID: ' + prfile.getId());
+
                 const username=profile.getName();
                 console.log('Name: ' + profile.getName());
                 //console.log('Image URL: ' + profile.getImageUrl());
@@ -155,23 +158,28 @@
                 auth2 = gapi.auth2.init({
                     client_id: '165380760001-9igc8olfrju0ojt7e0rahp2ls9ko55b2.apps.googleusercontent.com',
                     cookiepolicy: 'single_host_origin',
+
                     // Request scopes in addition to 'profile' and 'email'
                     //scope: 'additional_scope'
                 });
+                console.log("done1");
                 attachSignin(document.getElementById('google-signin'));
                 });
             }
 
             function attachSignin(element) {
+                console.log("done2");
                 console.log(element.id);
                 auth2.attachClickHandler(element, {},
                     function(googleUser) {
+                        console.log("ho jaa");
                     /* document.getElementById('').innerText = "Signed in: " +
                         googleUser.getBasicProfile().getName(); */
                         logingoogle(googleUser);
                     }, function(error) {
                     alert(JSON.stringify(error, undefined, 2));
                 });
+                console.log("done3");
             }
 
             startApp()
