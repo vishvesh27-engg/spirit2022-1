@@ -184,7 +184,7 @@ app.use("/shutterbug_submission", shutterbug);
 app.use("/events/event_registration", event_regRoute);
 
 app.get("*", function (req, res) {
-  res.send("<h1>Not Found</h1>", 404);
+  res.status(404).send("<h1>Not Found</h1>");
 });
 
 app.listen(process.env.PORT || 3000, function (req, res) {
