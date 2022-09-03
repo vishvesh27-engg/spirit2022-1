@@ -1,38 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../basicwlb') -%>
 <head>
-	<link rel="stylesheet" href="css/events_style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Document</title>
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    .eventDetails {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5%;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .mycard {
+        margin: 5%;
+        margin-right: 0%;
+        flex-direction: column;
+        flex: 25%;
+        /* border-radius: 8%; */
+    }
+
+    .mycard:hover {
+        box-shadow: 0px 5px 10px grey;
+    }
+
+    .mycard>img {
+        padding: 5%;
+        border-radius: 35px;
+    }
+
+    .date {
+        opacity: 0.7;
+        width: 77.21px;
+        height: 24px;
+        right: 286.44px;
+        top: 297.22px;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.284px;
+        line-height: 23px;
+
+        text-align: center;
+    }
+
+    .card-text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.284px;
+        line-height: 23px;
+        opacity: 0.7;
+    }
+
+    .card-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.926px;
+        line-height: 30px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .mycard {
+            margin: 5%;
+            margin-right: 0%;
+            flex-direction: column;
+            flex: 50%;
+            border-color: white !important;
+            /* border-radius: 8%; */
+            outline: none;
+            box-shadow: 0px 5px 10px grey;
+        }
+    }
+
+    @media only screen and (max-width: 900px) and (min-width: 700px) {
+        .mycard {
+            margin: 5%;
+            margin-right: 0%;
+            flex-direction: column;
+            flex: 33.33%;
+            /* border-radius: 8%; */
+            box-shadow: 0px 5px 10px grey;
+        }
+    }
+
+    .card-body>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .card-body>a:hover {
+        text-decoration: none;
+        color: #8c30f5;
+    }
+
+    .card-link {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.284px;
+        line-height: 23px;
+    }
+
+    .heading {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        font-family: 'Poppins';
+        font-style: normal;
+        margin-left: 6%;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 67px;
+        color: #11002C;
+    }
+</style>
+
 <body>
-	<!-- NAVBAR CODE -->
-	<%- include('../navbar-nonsticky') -%>
 
-	<!--EVENTS-->
-	
+    <div class="cont">
+        <div class="heading">Events</div>
+        <div class="eventDetails">
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="/events/register/shutterbug" class="card-link">Read More --></a>
+                </div>
+            </div>
 
-	<div class="eventsbg container pb-5">
-	<h1 class="events-heading pt-5">EVENTS</h1>
-		
-		<div>
-			<%- include('ongoing_events') -%>		
-		</div>
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="/events/register/shutterbug" class="card-link">Read More &#8594</a>
+                </div>
+            </div>
 
-		<div>
-			<%- include('upcoming_events') -%>		
-		</div>
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Read More --></a>
+                </div>
+            </div>
 
-		<div>
-			<%- include('completed_events') -%>
-		</div>
-	</div>
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Read More --></a>
+                </div>
+            </div>
 
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Read More --></a>
+                </div>
+            </div>
 
-	<!--FOOTER-->
-	<%- include('../footer') -%>
-
-	
-
+            <div class="card mycard" style="width: 18rem">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    style="object-fit: contain" alt="Card image cap" />
+                <div class="card-body">
+                    <p class="date">29/08/2022</p>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Read More --></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

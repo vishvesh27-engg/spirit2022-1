@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- SPIRIT LOGO -->
+     <link rel="shortcut icon" type="image/png" href="images/logo.jpg" />
+
+    <!-- SPIRIT TITLE -->
+    <title>Spirit 2021 | Event Registration</title>
+	   <link rel="stylesheet" href="css/events_style.css" />
+		<style>
+			body {
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+#root {
+  height: 100%;
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+.leftDiv {
+  position: relative;
+  top: 0px;
+  float: left;
+  width: 58%;
+  height: 100vh;
+  overflow-y: auto;
+  background: #c567ff;
+}
+.rightDiv {
+  position: relative;
+  float: left;
+  width: 42%;
+  height: 100vh;
+  overflow-y: auto;
+  background: #0a0a0a;
+}
+.athlos_styles{
+	display: flex;
+	color: white;
+	font-family: Inter;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+}
+.img1 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/Iplcard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img2 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/Shutterbugcard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img3 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/Marathoncard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img4 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/Fitnesscard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img5 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/Athlosarenacard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img6 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/ChessCard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img7 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/CricketfantasyCard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img8 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/CricketworkshopCard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img9 {
+  width: 100%;
+  height: 34vh;
+  background-image: url('/images/TreasureCard.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.titleRow {
+  width: 100%;
+  padding-top: 3.6%;
+  display: inline-block;
+}
+.title {
+  position: relative;
+  float: left;
+  width: fit-content;
+  margin-left: 4.3%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: x-large;
+  color: #0a0a0a;
+}
+.date {
+  position: relative;
+  float: right;
+  width: fit-content;
+  margin-right: 7.3%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.3vh;
+  color: #0a0a0a;
+}
+.description {
+  position: relative;
+  display: inline-block;
+  width: 89.4%;
+  height: fit-content;
+  padding-top: 5.5%;
+  padding-left: 4.2%;
+  padding-right: 6.4%;
+  padding-bottom: 3.3%;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8vh;
+  color: #0a0a0a;
+}
+.row {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2.6vh;
+  display: inline-block;
+}
+.leftRow {
+  float: left;
+  width: 43%;
+  margin-left: 4.2%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.3vh;
+  color: #0a0a0a;
+}
+.rightRow {
+  float: left;
+  width: 13.9%;
+  margin-left: 24.1%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.3vh;
+  text-align: right;
+  color: #0a0a0a;
+}
+.registerTitle {
+  width: 17.4%;
+  height: 3.7vh;
+  margin-left: 21.1%;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.1vh;
+  color: #ffffff;
+}
+.registerTitle_2 {
+  width: 20%;
+  height: 3.7vh;
+  margin-left: 21.1%;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.7vh;
+  color: #ffffff;
+}
+.formFieldRow {
+  height: 4.4vh;
+  width: 100%;
+  margin-bottom: 3.1vh;
+}
+.demo{
+   width: 80%;
+	height: 4vh;
+	font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vh;
+  line-height: 2vh;
+color: rgba(255, 255, 255, 0.8);
+}
+			
+.formFieldLabel {
+  float: left;
+  width: 14.7%;
+  height: 4vh;
+  margin-left: 21.1%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vh;
+  line-height: 2vh;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.8);
+}
+.formFieldLabel2 {
+  float: right;
+  width: 14.7%;
+  height: 4vh;
+  margin-right: 8%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vh;
+  line-height: 2vh;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.8);
+}
+.text {
+  float: left;
+  width: 58%;
+  height: 4vh;
+  margin-left: 21.1%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vh;
+  line-height: 4vh;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.8);
+}
+.formFieldInput {
+  float: left;
+  width: 38.4%;
+  height: 4.4vh;
+  margin-left: 2.4%;
+  color: rgba(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0);
+}
+.formSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8vh 20%;
+  width: 37.4%;
+  height: 5.7vh;
+  margin-left: 38.4%;
+  margin-top: 5.7vh;
+  margin-bottom: 5.7vh;
+  background: #c567ff;
+  border-radius: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vh;
+  color: #0a0a0a;
+}
+@media screen and (max-device-width: 600px) {
+  #root {
+    overflow-y: auto;
+  }
+  .leftDiv,
+  .rightDiv {
+    height: fit-content;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .title,
+  .date {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 18.5px;
+  }
+  .leftRow,
+  .rightRow {
+    font-size: 17px;
+  }
+}
+.prize{
+	text-align: center;
+	font-size:x-large;
+	font-family: "Poppins", sans-serif;
+}
+		</style>
+    </head>
+    <body>
+        <div class="root">
+			<div class="leftDiv">
+				<%if (name==="shutterbug"){%>
+				<div id="Shutterbug1">
+					<div class="img2"></div>
+					<div class="titleRow">
+						<div class="title">ShutterBug</div>
+						<div class="date"> 8-14 Oct</div>
+					</div>
+					<div class="description">
+						It is easy to access online free stock, but it's hard to find anything that truly represents the 													diversity that exists in our society”. Spirit 2021 brings an online competition where you 															   showcase your sports photography skills to get exciting prizes and compete with some of the best                                                        photographers across the country.
+					</div>
+					<div class="prize"><b>Prize Pool of 5k</b></div>
+				</div>
+				<%}else if (name==="marathon"){%>
+				<div id="marathon1">
+					<div class="img3"></div>
+					<div class="titleRow">
+						<div class="title">Marathon</div>
+						<div class="date"> 16-17 Oct</div>
+					</div>
+					<div class="description">
+					 	Running is the greatest metaphor for life because you get out of it is what you put into it. Ergo, overcoming the obstacles due to pandemic, Spirit 2021, IIT Guwahati, is conducting a one of its kind virtual Marathon to improve the well-being of people, because as we run, we become.
+					</div>
+					<div class="prize"><b>Prize Pool of 10k</b></div>
+				</div>
+				<%}else if (name==="fitness"){%>
+				<div id="fitness1">
+					<div class="img4"></div>
+					<div class="titleRow">
+						<div class="title">Fitness Challenge</div>
+						<div class="date">  2-20 Oct</div>
+					</div>
+					<div class="description">
+						With every passing day the craze of fitness is increasing, to boost that we bring a perfect platform for fitness freaks to represent their physical aptitude in front of the world through different fitness challenges and win handy prizes and also an experience of insight into the fitness world.
+					</div>
+					<!-- <div class="prize"><b>Prize Pool of 10k</b></div> -->
+				</div>
+				<%}else if (name==="chess"){%>
+					<div id="chess1">
+					<div class="img6"></div>
+					<div class="titleRow">
+						<div class="title">Chess</div>
+						<div class="date"> 22-24 Oct</div>
+					</div>
+					<div class="description">
+Chess is a game of imagination and knowledge. It is an epic game of old insight. During this pandemic, Chess in India has arrived at new stature. Spirit, IIT Guwahati conducts its first online chess competition to give chess aficionados a stage to fight it out and grandstand their abilities.
+					</div>
+					<div class="prize"><b>Prize Pool of 30k</b></div>
+				</div>
+				<%}else if (name==="fantasy"){%>
+					<div id="fantasy1">
+					<div class="img7"></div>
+					<div class="titleRow">
+						<div class="title">Cricket Fantasy</div>
+						<div class="date"> 24 Oct</div>
+					</div>
+					<div class="description">
+NeoFanTasy is a new twist on Fantasy Cricket! Gear up for the most exciting and awaited match between India and Pakistan! Think you know who will be smacking sixes today? Make your own team, Play, and find out! Win thrilling prizes in form of NFTs!
+					</div>
+					<!-- <div class="prize"><b>Prize Pool of 30k</b></div> -->
+				</div>
+				<%}else if (name==="cricket_workshop"){%>
+					<div id="cricket_workshop1">
+					<div class="img8"></div>
+					<div class="titleRow">
+						<div class="title">Cricket Workshop</div>
+						<div class="date"> 23 Oct</div>
+					</div>
+					<div class="description">
+Online sports workshop has been one of the most popular workshops in the virtual College. Sports have always been a part of our lives. However, in today’s world, it is hard to find the time and space for this. Spirit’21, IIT Guwahati brings "Virtual Cricket Workshop" letting you experience the joy of cricket without even stepping out of your room.
+					</div>
+					<!-- <div class="prize"><b>Prize Pool of 30k</b></div> -->
+				</div>
+				<%}else if (name==="treasure_hunt"){%>
+					<div id="treasure_hunt1">
+					<div class="img9"></div>
+					<div class="titleRow">
+						<div class="title">Treasure Hunt</div>
+						<div class="date">22-24 Oct</div>
+					</div>
+					<div class="description">
+Treasure hunt is discovering hints to arrive at the last destination and get rewarded. Spirit, IIT Guwahati brings you Treasure Hunt 2021. Be prepared to witness the first-of its sort chase where you’ll have to concentrate all your impulses and type to go through various stages. Way more fun.
+					</div>
+					<!-- <div class="prize"><b>Prize Pool of 30k</b></div> -->
+				</div>
+				<%}%>
+	
+			</div>
+			<div class="rightDiv">
+					<div class="registerTitle">Register</div>
+					<form id="event-form" method="POST" >
+					
+						<%if (name==="shutterbug"){%>
+						<%- include('event_reg_forms/shutterbugform') -%>
+						<%}else if (name==="marathon"){%>
+						<%- include('event_reg_forms/marathonform') -%> 
+						<%}else if (name==="fitness"){%>
+						<%- include('event_reg_forms/fitnessform') -%> 
+						<%}else if (name==="fantasy"){%>
+						<%- include('event_reg_forms/fantasyform') -%> 
+						<%}else if (name==="cricket_workshop"){%>
+						<%- include('event_reg_forms/cricket_workshopform') -%>
+						<%}%>
+					</form>
+				</div>
+			</div>
+		
+	<script>
+		// var event_name = 'shutterbug'
+		if (event_name === "shutterbug"){
+			var form = document.getElementById('event-form')
+			form.addEventListener('submit', registerForm)
+			async function registerForm(event) {
+				event.preventDefault()
+				let id = '<%=user._id%>'					
+				var full_name = document.getElementById('full_name').value
+				var email_address = document.getElementById('email_address').value
+				var college = document.getElementById('college').value
+				var contact_number = document.getElementById('contact_number').value
+        		var amb_id = document.getElementById('amb_id').value
+				var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						full_name,event_name,email_address,college,contact_number,amb_id
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					window.location.replace(`/events/event_registration/success`);
+					alert('Success')
+				} else {
+					window.location.replace(`/`);
+					alert(result.error)
+				}
+		}
+	}
+    	else if(event_name === "marathon"){
+			var form = document.getElementById('event-form')
+			form.addEventListener('submit', registerForm)
+			async function registerForm(event) {
+				event.preventDefault()
+				let id = '<%=user._id%>'					
+				var full_name = document.getElementById('full_name2').value
+				var email_address = document.getElementById('email_address2').value
+				var college = document.getElementById('college2').value
+				var contact_number = document.getElementById('contact_number2').value
+        		var amb_id = document.getElementById('amb_id2').value
+				var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						full_name,event_name,email_address,college,contact_number,amb_id
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					window.location.replace(`/events/event_registration/success`);
+					alert('Success')
+				} else {
+					window.location.replace(`/`);
+					alert(result.error)
+				}
+		}}
+		else if(event_name === "fitness"){
+			var form = document.getElementById('event-form')
+			form.addEventListener('submit', registerForm)
+			async function registerForm(event) {
+				event.preventDefault()
+				let id = '<%=user._id%>'					
+				var full_name = document.getElementById('full_name3').value
+				var email_address = document.getElementById('email_address3').value
+				var college = document.getElementById('college3').value
+				var contact_number = document.getElementById('contact_number3').value
+        		var amb_id = document.getElementById('amb_id3').value
+				var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						full_name,event_name,email_address,college,contact_number,amb_id
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					window.location.replace(`/events/event_registration/success`);
+					alert('Success')
+				} else {
+					window.location.replace(`/`);
+					alert(result.error)
+				}
+		}}
+		else if(event_name === "athlos"){
+			var form = document.getElementById('event-form')
+			form.addEventListener('submit', registerForm)
+			async function registerForm(event) {
+				event.preventDefault()
+				let id = '<%=user._id%>'					
+				var full_name = document.getElementById('full_name4').value
+				var email_address = document.getElementById('email_address4').value
+				var college = document.getElementById('college4').value
+				var contact_number = document.getElementById('contact_number4').value
+        		var amb_id = document.getElementById('amb_id4').value
+				var designation = document.getElementById('desig4').value
+				if(document.getElementById('cricket').checked){var cricket = "cricket";}else{ var cricket = 'null'; }
+				if(document.getElementById('football').checked){var football = "football";}else{ var football = 'null'; }
+				if(document.getElementById('volleyball').checked){var volleyball = "volleyball";}else{ var volleyball = 'null'; }
+				if(document.getElementById('badminton').checked){var badminton = "badminton";}else{ var badminton = 'null'; }
+				if(document.getElementById('lawn_tennis').checked){var lawn_tennis = "lawn_tennis";}else{ var lawn_tennis = 'null'; }
+				if(document.getElementById('table_tennis').checked){var table_tennis = "table_tennis";}else{ var table_tennis = 'null'; }
+				if(document.getElementById('carrom').checked){var carrom = "carrom";}else{ var carrom = 'null'; }
+				var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						full_name,event_name,email_address,college,contact_number,amb_id,
+						cricket,football,volleyball,badminton,lawn_tennis,table_tennis,carrom,
+						designation
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					window.location.replace(`/events/event_registration/athsuccess`);
+					alert('Success')
+				} else {
+					window.location.replace(`/`);
+					alert(result.error)
+				}
+		}}
+		else if(event_name === "chess"){
+			var form = document.getElementById('event-form')
+			form.addEventListener('submit', registerForm)
+			async function registerForm(event) {
+				event.preventDefault()
+				let id = '<%=user._id%>'					
+				var full_name = document.getElementById('full_name5').value
+				var email_address = document.getElementById('email_address5').value
+				var college = document.getElementById('college5').value
+				var contact_number = document.getElementById('contact_number5').value
+				var chess_username = document.getElementById('chess_username').value
+        		var amb_id = document.getElementById('amb_id5').value
+				var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						full_name,event_name,email_address,college,contact_number,chess_username,amb_id
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					window.location.replace(`/events/event_registration/success`);
+					alert('Success')
+				} else {
+					window.location.replace(`/`);
+					alert(result.error)
+				}
+		}}
+		else if(event_name === "fantasy"){
+		var form = document.getElementById('event-form')
+		form.addEventListener('submit', registerForm)
+		async function registerForm(event) {
+			event.preventDefault()
+			let id = '<%=user._id%>'					
+			var full_name = document.getElementById('full_name6').value
+			var email_address = document.getElementById('email_address6').value
+			var college = document.getElementById('college6').value
+			var whatsapp_number = document.getElementById('whatsapp_number').value
+			var amb_id = document.getElementById('amb_id6').value
+			var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					full_name,event_name,email_address,college,whatsapp_number,amb_id
+				})
+			}).then((res) => res.json())
+
+			if (result.status === 'ok') {
+				window.location.replace(`/events/event_registration/success`);
+				alert('Success')
+			} else {
+				window.location.replace(`/`);
+				alert(result.error)
+			}
+		}}
+		else if(event_name === "cricket_workshop"){
+		var form = document.getElementById('event-form')
+		form.addEventListener('submit', registerForm)
+		async function registerForm(event) {
+			event.preventDefault()
+			let id = '<%=user._id%>'					
+			var full_name = document.getElementById('full_name7').value
+			var email_address = document.getElementById('email_address7').value
+			var college = document.getElementById('college7').value
+			var contact_number = document.getElementById('contact_number7').value
+			var amb_id = document.getElementById('amb_id7').value
+			var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					full_name,event_name,email_address,college,contact_number,amb_id
+				})
+			}).then((res) => res.json())
+
+			if (result.status === 'ok') {
+				window.location.replace(`/events/event_registration/success`);
+				alert('Success')
+			} else {
+				window.location.replace(`/`);
+				alert(result.error)
+			}
+		}}
+		else if(event_name === "treasure_hunt"){
+		var form = document.getElementById('event-form')
+		form.addEventListener('submit', registerForm)
+		async function registerForm(event) {
+			event.preventDefault()
+			let id = '<%=user._id%>'					
+			var full_name = document.getElementById('full_name8').value
+			var email_address = document.getElementById('email_address8').value
+			var college = document.getElementById('college8').value
+			var contact_number = document.getElementById('contact_number8').value
+			var amb_id = document.getElementById('amb_id8').value
+			var result = await fetch(`/events/event_registration/post/${event_name}/${id}`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					full_name,event_name,email_address,college,contact_number,amb_id
+				})
+			}).then((res) => res.json())
+
+			if (result.status === 'ok') {
+				window.location.replace(`/events/event_registration/success`);
+				alert('Success')
+			} else {
+				window.location.replace(`/`);
+				alert(result.error)
+			}
+		}}
+		else if(event_name === "iplauction"){
+				var form = document.getElementById('event-form')
+				form.addEventListener('submit', registerForm2)
+
+				async function registerForm2(event){
+					event.preventDefault();
+					const memb1 =await registerUser(1);
+					const memb2 =await registerUser(2);
+					const memb3 =await registerUser(3);
+          			const amb_id = document.getElementById('amb_id').value;
+					const result=await registerForEvent(memb1,memb2,memb3);
+				};
+
+				async function registerUser(i) {
+          			const amb_id = document.getElementById('amb_id').value;
+          			const name = document.getElementById(`full_name${i}`).value;
+					const email = document.getElementById(`email_address${i}`).value;
+					const discord = document.getElementById(`discord${i}`).value;
+					const result = await fetch(`/events/event_registration/post_ipl`, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+            			name,
+						email,
+						discord,
+            			amb_id
+					})
+					}).then((res) => res.json())
+					if (result.status === 'ok') {
+					return result.data
+					
+					} else {
+					window.location.replace(`/`);
+					alert(result.error)
+					}
+				};
+
+				async function registerForEvent(member1,member2,member3) {
+					const teamname = document.getElementById("team_name").value;
+					const result = await fetch(`/iplauction/register`, {
+						method: 'POST',
+						headers: {
+						'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({
+						member1, member2, member3,teamname
+						})
+					}).then((res) => res.json())
+					if (result.status === 'ok') {
+						window.location.replace(`/events/event_registration/success`);
+						alert('Success')
+					} else {
+						window.location.replace(`/`);
+						alert(result.error)
+					}
+				};			
+			
+		}
+	
+    </script>
+
+    </body>
+</html>

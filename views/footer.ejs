@@ -1,259 +1,231 @@
-<head>
 
-<style>
-	          
-.footer {
-  background-color: #0a0a0a;
-  color: white;
-  display: grid;
-  grid-template-columns: 1.9fr repeat(3, 1fr);
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Footer Page</title>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/masked-hero-demo');
+@import url('http://fonts.cdnfonts.com/css/palanquin');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.page-footer {
+  background-color: #11002c;
+  /* display: grid;
+  grid-template-columns: 1.9fr repeat(3, 1fr); */
   font-size: 1.45rem;
   font-weight: 300;
   line-height: 2;
-  padding: 4rem 0; }
-  @media (max-width: 56.25em) {
-    .footer {
-      grid-template-columns: 1.4fr repeat(3, 1fr); } }
-  @media (max-width: 37.5em) {
-    .footer {
-      grid-template-columns: 100%;
-      padding: 2rem 0 1rem 0; } }
-  .footer-logo {
-    padding: 1.4rem 0;
-    position: relative; }
-    @media (max-width: 37.5em) {
-      .footer-logo {
-        display: none; } }
-    .footer-logo-box {
-      padding: 3rem 0;
-      text-align: center;
-      position: relative; }
-    .footer-logo-img {
-      position: absolute;
-      left: 25%;
-      width: 40%; }
-  .footer-links {
-    padding: 1.4rem 0; }
-    @media (max-width: 37.5em) {
-      .footer-links {
-        text-align: center;
-        padding: 0.5rem 0; } }
-    .footer-links-list {
-      list-style: none; }
-    .footer-links-link {
-      text-decoration: none;
-      display: inline-block;
-      padding: 0.7rem 0; }
-      .footer-links-link:hover {
-        text-decoration: underline; }
-      .footer-links-link:link, .footer-links-link:visited {
-        color: white; }
-      @media (max-width: 37.5em) {
-        .footer-links-link {
-          padding: 0.35rem; } }
-  .footer-legal {
-    padding: 1.4rem 0; }
-    @media (max-width: 37.5em) {
-      .footer-legal {
-        text-align: center;
-        padding: 2rem 0; } }
-    .footer-legal-list {
-      list-style: none; }
-    .footer-legal-terms {
-      text-decoration: none;
-      display: inline-block;
-      padding: 0.7rem 0; }
-      .footer-legal-terms:hover {
-        text-decoration: underline; }
-      .footer-legal-terms:link, .footer-legal-terms:visited {
-        color: white; }
-      @media (max-width: 37.5em) {
-        .footer-legal-terms {
-          padding: 0.5rem 0; } }
-  .footer-social {
-    padding: 1.4rem 0; }
-    @media (max-width: 37.5em) {
-      .footer-social {
-        text-align: center;
-        padding: 1.5rem 0; } }
-    .footer-social-list {
-      display: grid;
-      grid-template-columns: 0.1fr 1fr; }
-      @media (max-width: 37.5em) {
-        .footer-social-list {
-          display: inline; } }
-      .footer-social-list-box {
-        position: relative; }
-        @media (max-width: 37.5em) {
-          .footer-social-list-box {
-            display: inline-block;
-            width: 2rem;
-            text-align: center;
-            margin: 0 0.3rem; } }
-    .footer-social-link--img {
-      text-decoration: none;
-      display: inline-block; }
-    .footer-social-link--text {
-      text-decoration: none;
-      display: inline-block;
-      position: absolute;
-      transform: translateY(-60%);
-      top: 50%;
-      padding: 0.7rem 0;
-      margin-left: 1rem; }
-      .footer-social-link--text:hover {
-        text-decoration: underline; }
-      .footer-social-link--text:link, .footer-social-link--text:visited {
-        color: white; }
-      @media (max-width: 37.5em) {
-        .footer-social-link--text {
-          display: none;
-          padding: 0.5rem 0; } }
-  .footer-h3 {
-    color: white;
-    font-size: 1.9rem;
-    font-weight: 400;
-    margin-bottom: 2.5rem; }
-    @media (max-width: 56.25em) {
-      .footer-h3 {
-        margin-bottom: 2rem; } }
-    @media (max-width: 37.5em) {
-      .footer-h3 {
-        font-size: 2.1rem;
-        margin-bottom: 1.5rem; } }
+  padding: 4rem 0;
+  @media (max-width: 56.25em)
+}
 
-.footer-bottom {
-  background-color: #404040;
-  color: white;
-  font-size: 1.2rem;
+.myclass{
+  margin: 5%;
+}
+
+
+.text1{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+}
+
+.anchortag{
+padding: 3%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+}
+.ulListpara{
+  padding-bottom: 0;
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+}
+.myfooteranchor{
+  text-decoration: none;
+}
+.ForMargin{
+  margin-top: 3%;
+  margin-right: 0%;
+  text-align: left;
+}
+#inner-2{
+  height: auto;
+  width: auto;
+  font-family: 'Masked Hero Demo';
+  font-style: normal;
   font-weight: 400;
-  padding: 0.9rem 0 0.2rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr; }
-  @media (max-width: 56.25em) {
-    .footer-bottom {
-      grid-template-columns: 1fr 1fr 2.2fr; } }
-  @media (max-width: 37.5em) {
-    .footer-bottom {
-      height: 13rem;
-      position: relative;
-      display: block; } }
-  .footer-bottom-phone {
-    padding-left: 2rem;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    position: relative; }
-    @media (max-width: 37.5em) {
-      .footer-bottom-phone {
-        padding-left: 1rem; } }
-  @media (max-width: 37.5em) {
-    .footer-bottom-phone-container {
-      display: inline-block;
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-42%);
-      width: 18rem; } }
-  .footer-bottom-mail {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr; }
-    @media (max-width: 56.25em) {
-      .footer-bottom-mail {
-        padding-left: 1rem; } }
-  @media (max-width: 37.5em) {
-    .footer-bottom-mail-container {
-      display: inline-block;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      width: 20rem;
-      transform: translateX(-38%); } }
-  .footer-bottom-copyright {
-    padding-right: 2rem;
-    text-align: right;
-    margin-top: 0.3rem; }
-    @media (max-width: 37.5em) {
-      .footer-bottom-copyright {
-        text-align: center;
-        padding: 0;
-        display: inline-block;
-        width: 19rem;
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%); } }
-  .footer-bottom--text {
-    margin-left: 1rem;
-    position: relative; }
-    .footer-bottom--text-p {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-60%); }
-    .footer-bottom--text-link, .footer-bottom--text-link:link, .footer-bottom--text-link:visited {
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-60%); }
+  font-size: 2.313rem;
+  line-height: 3.625rem;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  white-space: nowrap;
+}
+#inner-3{
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 
-</style>
+
+#inner-1{
+  margin-top: 0.001rem;
+  width: 6.132rem;
+  height: 2.938rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#inner-4{
+  font-size: 0.7rem;
+  margin-top: 2rem;
+}
+
+#inner-5{
+  margin-top: 3rem;
+}
+
+.mybtn{
+  border-radius: 50% !important;
+  font-size: 90%;
+  background-color:  #1f1139 ;
+  outline-color: none !important;
+}
+    </style>
 </head>
-<footer class="footer">
-
-    <div class="footer-logo">
-        <div class="footer-logo-box"><img src="images/spirit logo 1 (Traced).png" class="footer-logo-img"></div>
-    </div>
-
-    <div class="footer-links">
-        <h3 class="footer-h3">Quick links</h3>
-        <ul class="footer-links-list">
-			<li><a href="login" class="footer-links-link">Login</a></li>
-            <li><a href="aboutus" class="footer-links-link">About Us</a></li>
-            <li><a href="events" class="footer-links-link">Events</a></li>
-            <li><a href="sponsors" class="footer-links-link">Sponsors</a></li>
-			 <li><a href="campus_amb_register" class="footer-links-link">Be A Campus Ambassador</a></li>
-        </ul>
-    </div>
 
 
-    <div class="footer-social">
-        <h3 class="footer-h3">Follow us</h3>
-        <div class="footer-social-list">
-            <div class="footer-social-list-box"><a href="https://facebook.com/spiritiitg" class="footer-social-link--img"><img
-                        src="images/FacebookLogo.png"></a></div>
-            <div class="footer-social-list-box"><a href="https://facebook.com/spiritiitg" class="footer-social-link--text"> Facebook</a></div>
+  <footer class="page-footer font-small mdb-color darken-3 pt-4">
 
-            <div class="footer-social-list-box"><a href="https://instagram.com/spirit_iitguwahati" class="footer-social-link--img"><img
-                        src="images/InstagramLogo.png"></a></div>
-            <div class="footer-social-list-box"><a href="https://instagram.com/spirit_iitguwahati" class="footer-social-link--text">Instagram</a></div>
-
-         
-        </div>
-
-    </div>
-</footer>
-<section class="footer-bottom">
-    <div class="footer-bottom-phone-container">
-        <div class="footer-bottom-phone">
-            <div class="footer-bottom--img"><img src="images/PhoneCall.png"></div>
-            <div class="footer-bottom--text">
-                <p class="footer-bottom--text-p">+91 62969 34176</p>
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3 ForMargin">
+  
+          <!-- Content -->
+          
+            <div class="myclass">
+            <div class="vector mt-sm-0"><img id="inner-1" src="images/spirit.svg" alt="Spirit vector"></div>
+            <a href="/" style="text-decoration: none;"><div class="text mt-sm-4 text1"> <div id="inner-2">SPIRIT 2022</div></div></a>
+            <div id="inner-3">The Annual Sports Fest of IIT Guwahati</div>
+            
+  
+            <div id="inner-4" style="color: #9966FF;">
+              Copyright © 2022 Spirit, Sports Board, IIT Guwahati:
+              <p style="color:#9966FF;"> All rights reserved </p>
             </div>
+  
+            <section id="inner-5">
+  
+              <a class="btn btn-outline-light btn-floating m-1 mybtn myfooteranchor" href="https://instagram.com/spirit_iitguwahati" role="button"
+                ><i class="fab fa-instagram"></i
+                  ></a>
+  
+              <a class="btn btn-outline-light btn-floating m-1 mybtn myfooteranchor" href="#!" role="button"
+                ><i class="fa-brands fa-facebook-f"></i></a>
+  
+              <a class="btn btn-outline-light btn-floating m-1 mybtn myfooteranchor" href="#!" role="button"
+                ><i class="fa-brands fa-twitter"></i></a>
+  
+              <a class="btn btn-outline-light btn-floating m-1 mybtn myfooteranchor" href="#!" role="button"
+                ><i class="fa-brands fa-youtube"></i></i
+              ></a>
+            </section>
+            </div>
+        
+  
         </div>
-    </div>
 
-    <div class="footer-bottom-mail-container">
-        <div class="footer-bottom-mail">
-            <div class="footer-bottom--img"><img src="images/Envelope.png"></div>
-            <div class="footer-bottom--text"> <a class="footer-bottom--text-link" href="mailto:spirit@iitg.ac.in">
-                    spirit@iitg.ac.in</a></div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-3 ForMargin">
+  
+          <!-- Links -->
+          <h5 class="text text1"> Quick Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="/" class="anchortag myfooteranchor">Home</a>
+            </li>
+            <li>
+              <a href="events" class="anchortag myfooteranchor">Events</a>
+            </li>
+            <li>
+              <a href="aboutus" class="anchortag myfooteranchor">About us</a>
+            </li>
+          </ul>
+  
         </div>
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3 ForMargin">
+  
+          <!-- Links -->
+          <h5 class="text text1"> CONTACT</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-envelope me-3 text-grayish" style="color: white; padding-bottom: 5%;"></i>
+              <a href="mailto:publicrelation.spirit@gmail.com" style="padding-left: 0%;" class="anchortag myfooteranchor">publicrelation.spirit@gmail.com</a>
+            </li>
+            <li>
+              <p class="ulListpara"><i class="fas fa-phone me-3 text-grayish"></i>Pratik Agarwal
+                +91-8658073960</p>
+            </li>
+            <li>
+              <p class="ulListpara"><i class="fas fa-phone me-3 text-grayish"></i>Harshith Reddy
+                +91-7780552508</p>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.025); color: grey; margin-bottom: 0%;">
+        © 2022 Copyright
+      </div>
     </div>
+   
 
-    <div class="footer-bottom-copyright">
-        <div class="footer-bottom--text">&#169; 2021 All rights reserved.</div>
-    </div>
+  
+  </footer>
 
-</section>
+
+
