@@ -1,0 +1,208 @@
+<%- include('../basic') -%>
+<head>
+	<title>Spirit 2021 | Register</title>
+	<link rel="stylesheet" href="css/registerpage_style.css" />
+</head>
+<body>
+	<%- include('../navbar') -%>
+   <section class="register-page">
+        <div class="register-image">
+            <div class="register-page-text">Spirit is the biggest collegiate sporting festival of North Eastern India with 3K+ participants from 65+ colleges held at IIT Guwahati.</div>
+        </div>
+       
+
+        <div class="register-content">
+            <div class="register-head">Register</div>
+            <div class="register">
+                <div class="register-with-cont" ><a class="register-with customGPlusSignIn auth" id="google-signup"><button class="register-with-btn register-with-btn-1"><i id="goomgle" class="fab fa-google"></i>&nbsp;&nbsp;Register with Google</button></a></div>
+                <!-- <div class="register-with-cont"><a class="register-with" href=""><button class="register-with-btn register-with-btn-2"><i id="goomgle" class="fab fa-facebook"></i>&nbsp;&nbsp;Register with Facebook</button></a></div> -->
+            </div>
+            
+            <div class="register-partition">or Register with Email</div>
+			<form>
+            <div style="color:green;" class="register-partition" id="success">
+                
+            </div>
+            <div class="register-inp">
+                <div class="register__input__row">
+                    <input type="text" class="register__input" id="Nameenter" placeholder="Full Name" required>
+                    <label for="name" class="register__label">Full Name</label>
+                </div>
+                <div class="register__input__row">
+                    <input type="text" class="register__input" id="Collegeenter" placeholder="School/College" required>
+                    <label for="college" class="register__label">School/College</label>
+                </div>
+                <div class="register__input__row">
+                    <input type="email" class="register__input" id="Emailenter" placeholder="Email" required>
+                    <label for="email" class="register__label">Email Address</label>
+                </div>
+                <div class="register__input__row">
+                    <input type="tel" class="register__input" placeholder="Contact Number" id="Numberenter" pattern="[1-9]{1}[0-9]{9}" required/>
+                    <label for="text" class="register__label">Contact Number</label></div>
+                <div class="register__input__row">
+                    <input type="password" class="register__input" id="Passwordenter" placeholder="Password" required>
+                    <label for="pwd" class="register__label">Password</label>
+                </div>
+            </div>
+				<div class="register-rf">
+                    <p class="register-rf-p"><input id="show_pass" class="register-rf-p-inp" type="checkbox"id="show_pass">
+                        <label for="show_pass" class="register-rf-p-label">Show Password</label></p>
+                </div>
+				
+			
+				
+			
+            <div style="color:red;" class="register-partition" id="errors">
+            
+            </div>
+				
+            <div class="registerpg-button">
+                <a class="registerpg-button-link" id="LOGINBUTTON"><button class="registerpg-button-btn" type="submit">Register</button></a>
+            </div>
+            </form>
+			
+			
+            <div class="login-acc">
+                <p class="login-acc-text">Already have an account? &nbsp;<a href="login" class="login-acc-link">Login</a></p>
+            </div>
+			
+        </div>
+	   
+	  
+    </section>
+	<%- include('../footer') -%>
+</body>
+        <script>
+        let show_pass_status = false;
+         document.getElementById("show_pass").addEventListener('click', show_pass)
+        let show_pass_checkbox =document.getElementById("show_pass");
+    
+    function show_pass(){
+        if(show_pass_status === false){
+            document.getElementById('Passwordenter').type= "text";
+            //show_pass_button.innerHTML="✓";
+            show_pass_checkbox.style.color = "#000000"; 
+            show_pass_status = true;
+        }else{
+            document.getElementById('Passwordenter').type= "password";
+            //show_pass_button.innerHTML="&nbsp&nbsp";
+            show_pass_checkbox.style.color = "#ffffff"; 
+            show_pass_status = false;
+        }   
+    }
+			
+
+            var remember=document.getElementById("Remember");
+            function rem(){remember.innerHTML="✓";}
+
+
+            const form = document.getElementById('LOGINBUTTON')
+            form.addEventListener('click', signupemail)
+            
+            async function signupemail(event) {
+                event.preventDefault()
+                const email = document.getElementById('Emailenter').value
+                const password = document.getElementById('Passwordenter').value
+                const phno = document.getElementById('Numberenter').value
+                const collegename = document.getElementById('Collegeenter').value
+                const username = document.getElementById('Nameenter').value
+                const provider = "email";
+				if(email&&password&&phno&&collegename&&username){
+					
+				}
+				else{
+					document.getElementById("errors").innerHTML="Fields are empty"
+					return
+				}
+                const result = await fetch('/authapi/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+						username,
+						password,
+						email,
+						collegename,
+						phno
+					})
+                }).then((res) => res.json())
+
+                if (result.status === 'ok') {
+                   
+                    
+                    document.getElementById("success").innerHTML='Success. Check your mail and activate your account'
+					
+                } else {
+                    document.getElementById("errors").innerHTML=result.error
+                }
+            }
+
+            //calling register apis to register using google
+			async function registergoogle(googleUser) {
+            	var profile = googleUser.getBasicProfile();
+            	//console.log('ID: ' + profile.getId());
+            	const username=profile.getName();
+            	//console.log('Image URL: ' + profile.getImageUrl());
+            	const email = profile.getEmail();
+            	const provider="google";
+            	console.log('Email: ' + profile.getEmail());
+           		const result = await fetch('/authapi/registerwithgofb', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email,
+                    username,
+                    provider
+                })
+            	}).then((res) => res.json())
+             
+            	if (result.status === 'ok') {
+					var auth2 = gapi.auth2.getAuthInstance();
+					auth2.signOut()
+					//window.location.replace(`/profile/get/${result.data._id}`);
+					
+                	document.getElementById("success").innerHTML='Success. Check your mail and activate your account'
+					
+            	} else {
+					var auth2 = gapi.auth2.getAuthInstance();
+					auth2.signOut()
+					console.log(result.error)
+                	document.getElementById("errors").innerHTML=result.error
+            	}
+        	}
+        	
+           
+              
+
+            //google-signup  
+            var googleUser = {};
+            var startApp = function() {
+                gapi.load('auth2', function(){
+                // Retrieve the singleton for the GoogleAuth library and set up the client.
+                auth2 = gapi.auth2.init({
+                    client_id: '3577006987-f2e34fou4ef4avubvd7lkea870ghj3fq.apps.googleusercontent.com',
+                    cookiepolicy: 'single_host_origin',
+                    plugin_name:"chat27"
+                    // Request scopes in addition to 'profile' and 'email'
+                    //scope: 'additional_scope'
+                });
+                attachSignin(document.getElementById('google-signup'));
+                });
+            }
+
+            function attachSignin(element) {
+                console.log(element.id);
+                auth2.attachClickHandler(element, {},
+                    function(googleUser) {
+                    /* document.getElementById('').innerText = "Signed in: " +
+                        googleUser.getBasicProfile().getName(); */
+                        registergoogle(googleUser);
+                    }, function(error) {
+                    alert(JSON.stringify(error, undefined, 2));
+                });
+            }
+            startApp()
+        </script>

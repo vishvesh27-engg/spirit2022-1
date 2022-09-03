@@ -1,0 +1,219 @@
+<%- include('../basic') -%>
+<head>
+	<title>Spirit 2021 | Log in</title>
+	<link rel="stylesheet" href="css/loginpage_style.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+
+<body>
+	<%- include('../navbar') -%>
+   <section class="login-page">
+        <div class="login-image">
+        <div class="login-page-text">Spirit is the biggest collegiate sporting festival of North Eastern India with 3K+ participants from 65+ colleges held at IIT Guwahati.</div>
+        </div>
+
+        <div class="login-content">
+            <div class="login-head">Login</div>
+            <div class="login">
+                <div class="login-with-cont"><a class="login-with customGPlusSignIn auth" id="google-signin"><button class="login-with-btn login-with-btn-1"><i id="goomgle" class="fab fa-google"></i>&nbsp;&nbsp;Sign in with Google</button></a></div>
+                <!-- <div class="login-with-cont"><a class="login-with" href=""><button class="login-with-btn login-with-btn-2"><i id="goomgle" class="fab fa-facebook"></i>&nbsp;&nbsp;Sign in with Facebook</button></a></div> -->
+            </div>
+            <div class="login-partition"> or Sign in with Email </div>
+			<form>
+            <div class="login-inp">
+                <div class="login__input__row">
+                    <input type="email" class="login__input" id="Emailenter" placeholder="Email" required>
+                    <label for="email" class="login__label">Email Address</label>
+                </div>
+                <div class="login__input__row">
+                    <input type="password" class="login__insput" id="Passwordenter" placeholder="Password" required>
+                    <label for="pwd" class="login__label">Password</label>
+                </div>
+            </div>
+            
+            <div class="login-rf">
+                <p class="login-rf-p"><input onclick="" id="show_pass" class="login-rf-p-inp" type="checkbox" id="show_pass">
+                    <label for="show_pass" class="login-rf-p-label">Show Password</label></p>
+                <p class="login-rf-f"  id="forgot" style="text-decoration:none; cursor:pointer;">Forgot Password?</p>
+            </div>
+			<div style="color:red;" class="login-partition" id="errors">
+             <% if(typeof loginmsg== 'undefined') { %>
+                  
+             <% }else{ %>
+				You must login first.
+			<%}%>
+            </div>
+            <div class="loginpg-button">
+                <a class="loginpg-button-link"><button class="loginpg-button-btn" id="LOGINBUTTON" type="submit">Login</button></a>
+            </div>
+			</form>
+            <div class="create-acc">
+                <p class="create-acc-text">Not registered yet? &nbsp;<a href="register" class="create-acc-link">Create account</a></p>
+            </div>
+        </div>
+    </section>
+	<%- include('../footer') -%>
+</body>
+			
+			
+
+        <script>
+			// document.getElementById('fb-login').addEventListener('click', function () {
+			// FB.login(statusChangeCallback, { scope: 'email,public_profile', return_scopes: true });
+			// }, false);
+			    let show_pass_status = false;
+     document.getElementById("show_pass").addEventListener('click', show_pass)
+    let show_pass_checkbox =document.getElementById("show_pass");
+
+      function show_pass(){
+    if(show_pass_status === false){
+        document.getElementById('Passwordenter').type= "text";
+        //show_pass_button.innerHTML="✓";
+        show_pass_checkbox.style.color = "#000000"; 
+        show_pass_status = true;
+    }else{
+        document.getElementById('Passwordenter').type= "password";
+        //show_pass_button.innerHTML="&nbsp&nbsp";
+        show_pass_checkbox.style.color = "#ffffff"; 
+        show_pass_status = false;
+    }   
+}
+
+
+            const form = document.getElementById('LOGINBUTTON')
+            form.addEventListener('click', loginemail)
+            async function loginemail(event) {
+                event.preventDefault()
+                const email = document.getElementById('Emailenter').value
+                const password = document.getElementById('Passwordenter').value
+                const provider = "email";
+                const result = await fetch('/authapi/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email,
+                        password,
+                        provider
+                    })
+                }).then((res) => res.json())
+
+                if (result.status === 'ok') {
+                    // everythign went fine
+                    //console.log('Got the token: ')
+                    //localStorage.setItem('token', result.data)//storing data in localstorage
+                    window.location.replace(`/`);
+                    // alert('Success')
+                } else {
+                    document.getElementById("errors").innerHTML=result.error
+                }
+            }
+            async function logingoogle(googleUser) {
+                console.log("done4");
+                var profile = await googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId());
+
+                const username=profile.getName();
+                console.log('Name: ' + profile.getName());
+                //console.log('Image URL: ' + profile.getImageUrl());
+                const email = profile.getEmail();
+                const provider="google";
+                const result = await fetch('/authapi/loginwithgofb', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email,
+                        username,
+                        provider
+                    })
+                }).then((res) => res.json())
+                
+                if (result.status === 'ok') {
+                    // everythign went fine
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut()
+                    console.log('Got the token: ')
+                    //localStorage.setItem('token', result.data)//storing data in localstorage
+                    window.location.replace(`/`);
+                    alert('Success')
+                } else {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut()
+                    document.getElementById("errors").innerHTML=result.error
+                }
+            }
+            
+          
+                
+
+            //google sign-in
+            var googleUser = {};
+            var startApp = function() {
+                gapi.load('auth2', function(){
+                // Retrieve the singleton for the GoogleAuth library and set up the client.
+                auth2 = gapi.auth2.init({
+                    client_id: '3577006987-f2e34fou4ef4avubvd7lkea870ghj3fq.apps.googleusercontent.com',
+                    cookiepolicy: 'single_host_origin',
+                    plugin_name:"chat27"
+                    // Request scopes in addition to 'profile' and 'email'
+                    //scope: 'additional_scope'
+                });
+                console.log("done1");
+                attachSignin(document.getElementById('google-signin'));
+                });
+            }
+
+            function attachSignin(element) {
+                console.log("done2");
+                console.log(element.id);
+                auth2.attachClickHandler(element, {},
+                    function(googleUser) {
+                        console.log("ho jaa");
+                    /* document.getElementById('').innerText = "Signed in: " +
+                        googleUser.getBasicProfile().getName(); */
+                        logingoogle(googleUser);
+                    }, function(error) {
+                    alert(JSON.stringify(error, undefined, 2));
+                });
+                console.log("done3");
+            }
+
+            startApp()
+
+            const forgot1 = document.getElementById('forgot')
+		    forgot1.addEventListener("click",forgotReqPass)
+
+            async function forgotReqPass(event){
+			event.preventDefault()
+			const email = document.getElementById('Emailenter').value
+			if(!email){
+				document.getElementById("errors").innerHTML="Enter your email address in the form"
+			}
+			else{
+			console.log(email)
+			const result = await fetch('/authapi/pass_forgot_req', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email
+                })
+            }).then((res) => res.json())
+			
+			if (result.status === 'ok') {
+                document.getElementById("errors").innerHTML='Please check your email for the link to reset your password'
+				// console.log(result.data)
+                
+            } else {
+                 document.getElementById("errors").innerHTML=result.data
+            }
+			}
+		}
+        </script>
+
+
