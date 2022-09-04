@@ -1,0 +1,244 @@
+<head>
+    <style>
+  .navigation {
+  height: 7rem;
+  background-color: #272727;
+  position: relative;
+  display: block;
+  z-index: 10000; }
+  @media (max-width: 56.25em) {
+    .navigation {
+      display: none; } }
+  .navigation-link, .navigation-link:link, .navigation-link:visited {
+    display: inline-block;
+    position: absolute;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: auto 0; }
+  .navigation-link:hover {
+    color: #c567ff; }
+  .navigation-link-img {
+    left: 1.5%;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important; }
+  .navigation-link-events {
+    left: 11%; }
+  .navigation-link-sponsors {
+    left: 21.5%; }
+  .navigation-link-gallery {
+    left: 33.5%; }
+  .navigation-link-aboutus {
+    left: 45.4%;
+		/* left:57%; */}
+
+.logo-img {
+  margin-top: 1rem;
+  display: inline-block;
+  height: 3rem; }
+
+.login-button {
+  display: inline-block;
+  position: absolute;
+  right: 1.5%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .login-button-btn, .login-button-btn:link, .login-button-btn:visited {
+    background-color: #c567ff;
+    text-decoration: none;
+    padding: 0.6rem 2.2rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+    font-size: 2rem;
+    color: #0a0a0a;
+    border: none;
+    cursor: pointer; }
+  .login-button-btn:hover, .login-button-btn:focus {
+    transform: translateY(-2px);
+    color: white; }
+  .login-button-btn:active, .login-button-btn:focus {
+    color: #0a0a0a;
+    background-color: #c567ff;
+    outline: none;
+    transform: translateY(-1px); }
+
+.navigationM {
+  height: 6rem;
+  background-color: #272727;
+  position: relative;
+  display: none; }
+  .navigationM_container {
+    width: 100%;
+    position: fixed;
+    z-index: 5000; }
+  @media (max-width: 56.25em) {
+    .navigationM {
+      display: block; } }
+  .navigationM__home {
+    display: inline-block;
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+  /* .navigationM__login {
+    display: inline-block;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; } */
+  .navigationM__checkbox {
+    display: none;
+	  position: absolute;
+    right: 2.8rem;
+	  top: -1%;
+	}
+  .navigationM__button {
+    background-color: #272727;
+    height: 5rem;
+    width: 2.5rem;
+    z-index: 2000;
+    text-align: center;
+	  position: absolute;
+    right: 2.8rem;
+	  top: -1%;
+	}
+  .navigationM__icon {
+    position: relative;
+    margin-top: 2.4rem;
+    margin-left: 4%;
+    color: white;
+    transition: all 0.3s; }
+    .navigationM__icon, .navigationM__icon::after {
+      content: "";
+      display: inline-block;
+      width: 2.8rem;
+      height: 1.8px;
+      background-color: white; }
+    .navigationM__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s; }
+    .navigationM__icon::after {
+      top: 1.2rem; }
+  .navigationM__checkbox:checked + .navigationM__button .navigationM__icon {
+    margin-top: 3rem;
+    transform: rotate(135deg); }
+  .navigationM__checkbox:checked + .navigationM__button .navigationM__icon::after {
+    top: 0;
+    transform: rotate(-90deg); }
+		
+		
+  .navigationM__nav {
+    height: 10vh;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 1500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: #272727;
+    position: relative; }
+  .navigationM__list {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+  .navigationM__checkbox:checked ~ .navigationM__nav {
+    top: 0;
+    height: 100vh;
+    visibility: visible;
+    opacity: 0.95; }
+  .navigationM-link, .navigationM-link:link, .navigationM-link:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    border-bottom: solid 1px white;
+    margin-bottom: 2rem; }
+
+/* .login-img {
+  height: 3.25rem;
+  display: inline-block;
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);} */
+
+.home-img {
+  display: inline-block;
+  height: 4.8rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-55%, -50%); }
+		
+@media (max-width: 23.43em) {
+    .navigationM-link, .navigationM-link:link, .navigationM-link:visited {
+      font-size: 2.1rem;
+	 width: 85%;} }
+
+    </style>
+</head>
+<nav class="navigation">
+        <a href="/" class="navigation-link navigation-link-img"> <img src="images/spirit logo 1 (Traced).png" class="logo-img" alt="Home"></a>
+        <a href="events" class="navigation-link navigation-link-events">Events</a>
+        <a href="sponsors" class="navigation-link navigation-link-sponsors">Sponsors</a>
+        <a href="aboutus" class="navigation-link navigation-link-gallery">About Us</a>
+        <a href="campus_amb_register" class="navigation-link navigation-link-aboutus">Join The Team</a>
+
+    <div class="login-button">
+		<%if (logged_in){%>
+			<a href="profile"><button class="login-button-btn">Profile</button></a>
+		<%}else{%>
+			<a href="login"><button class="login-button-btn">Login</button></a>
+		<%}%>
+	</div>
+</nav>
+
+    <div class="navigationM_container">
+		
+        <div class="navigationM">
+            <input type="checkbox" class="navigationM__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigationM__button"><span class="navigationM__icon">&nbsp;</span></label>
+ 
+            <a href="/" class="navigationM__home" > <img src="images/g4.png" class="home-img" alt="Home"></a>
+			
+           
+            <!-- <a href="profile" class="navigationM__login"><img src="images/login_iconabc.png" class="login-img" alt="Login"></a>
+            
+			<a href="login" class="navigationM__login"><img src="images/login_iconabc.png" class="login-img" alt="Login"></a> -->
+			
+            <nav class="navigationM__nav">
+                <ul class="navigationM__list">
+					<%if (logged_in){%>
+                    <li class="navigationM__item"><a href="profile" class="navigationM-link navigationM-link-login">Profile</a></li>
+					<%}else{%>
+                    <li class="navigationM__item"><a href="login" class="navigationM-link navigationM-link-login">Login</a></li>
+					<%}%>
+                    <li class="navigationM__item"><a href="events" class="navigationM-link navigationM-link-events" >Events</a></li>
+                    <li class="navigationM__item"><a href="sponsors" class="navigationM-link navigationM-link-sponsors">Sponsors</a></li>
+					<li class="navigationM__item"><a href="aboutus" class="navigationM-link navigationM-link-aboutus">About Us</a></li>
+                    <li class="navigationM__item"><a href="campus_amb_register" class="navigationM-link navigationM-link-gallery">Join The Team</a></li>   
+					
+                    
+                </ul>
+            </nav>   
+        </div>
+    </div>
+
+

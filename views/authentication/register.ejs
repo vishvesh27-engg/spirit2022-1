@@ -20,13 +20,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Register</title>
   </head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
     body{
       background-color: #F2F0F7;
-      /* background-image: url("spiritimg.svg"); */
+      background-image: url("data:image/svg+xml,%3Csvg width='1440' height='946' viewBox='0 0 1440 946' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M445.5 776.5L875.5 0H1532L1623 157H1007.5L574 946H-87L-182 776.5H445.5Z' fill='%23F2F0F7'/%3E%3C/svg%3E");
     }
     .bigContainer {
 
@@ -189,7 +189,7 @@
     .buttonlogin{
       width: 45% !important;
       padding: 4% !important;
-      font-size: 2vh;
+      font-size: 95% !important;
       cursor: pointer;
       border-radius: 50px !important;
       background-color: #301956 !important;
@@ -322,6 +322,22 @@
 #button2:hover{
   opacity: 0.9;
 }
+#success{
+  /* margin: 2%; */
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.myanchortag{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 4%;
+  /* color: #11002C; */
+
+}
     @media only screen and (max-width:980px) {
       .cont{
         display: flex;
@@ -370,6 +386,7 @@
     }
   </style>
   <body>
+    <%- include('../navbar') -%>
     <div class="bigContainer">
       <div class="cont">
         <div class="cont1">
@@ -429,51 +446,29 @@
             revert back :)
           </p>
           <div style="color:green;" class="register-partition" id="success">
-                
         </div>
           <div class="cardd">
             <h6>Name</h6>
-            <!-- <input
-              type="text"
-              placeholder="Enter Your Name"
-              name="userName"
-              class="TextBox"
-            /> -->
+            
             <input type="email" name="email" style="font-size: 15px;font-weight: 400;" id="NAME"
                      placeholder="  Enter your name" class="TextBox">
           </div>
           <div class="cardd">
             <h6>Email</h6>
-            <!-- <input
-              type="text"
-              placeholder="Provide Content"
-              name="content"
-              class="TextBox"
-            /> -->
+           
 
             <input type="email" name="email" style="font-size: 15px;font-weight: 400;" id="mail"
                      placeholder=" Enter your email" class="TextBox">
           </div>
           <div class="cardd">
             <h6>Password</h6>
-            <!-- <input
-              type="text"
-              placeholder="Enter Your Email"
-              name="emailId"
-              class="TextBox"
-            /> -->
-
+           
             <input type="password" name="email" style="font-size: 15px;font-weight: 400;" id="PASS"
                      placeholder="  Enter your password" class="TextBox">
           </div>
           <div class="cardd">
             <h6>Contact Number</h6>
-            <!-- <input
-              type="text"
-              placeholder="Write Your Question Here"
-              name="msg"
-              class="TextMsg"
-            /> -->
+            
             <input type="tel" name="email" style="font-size: 15px;font-weight: 400;" id="PHN"
                      placeholder="  Enter your phone number" class="TextBox">
           </div>
@@ -483,13 +478,14 @@
           <div class="bttns">
            
               <button type="button" class="btn btn-primary btn-block " id="button2">
-                Login with Google
+                Register with Google
               </button>
             
           </div>
           <div style="color:red;" class="register-partition" id="errors">
             
         </div>
+        <a href="login" class="myanchortag">Already have an account? Login.</a>
         </div>
       </div>
     </div>
