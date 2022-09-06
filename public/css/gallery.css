@@ -76,21 +76,25 @@ color: #AB7BFF;
   padding:4%;
 }
 
+.pos-text{
+  font-weight: 500;
+}
+
 .head-card{
   padding: 10%;
   background: #FCFAFE;
   box-shadow: 0px 8.31355px 16.6271px rgba(69, 0, 181, 0.05);
-  border-radius: 6.65084px;
-  height:30%px;
+  border-radius: 3.65084px;
+  height:300px;
 }
 
 .card-img-cont{
   background-color: #11002C;
-  border-radius: 20%;
+  border-radius: 4%;
 }
 
 .head-img{
-  border-radius: 20%;
+  border-radius: 10%;
 
 }
 

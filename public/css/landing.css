@@ -40,12 +40,11 @@ body {
   }
   
   .oki {
-    border: none;
-    background: #ab7bff;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 2rem;
-    margin-top: 3%;
+    border: none !important;
+    background: #ab7bff !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    margin-top: 3% !important;
     color: white !important;
   }
   /* .oki:hover {
@@ -99,7 +98,6 @@ body {
   .euro {
     position: relative;
     padding: 3% 5%;
-    width: 100vw;
   }
   
   
@@ -109,8 +107,9 @@ body {
     }
   
     .oki{
-      height: 2.9rem;
-      width: 9rem;
+      height: 2.9rem !important;
+      width: 9rem !important;
+      font-size: medium !important;
     }
   } 
   
@@ -176,8 +175,8 @@ body {
     .stat-head{
       margin-top: 6%;
       padding-top: 2%;
-      font-weight: 900;
-      font-size: calc(1.3rem + 1.2vw);
+      font-weight: 650;
+      font-size: calc(.8rem + 2vw);
     }
     
    
@@ -402,7 +401,7 @@ body {
   .start-1 {
     display: flex;
     flex-direction: horizontal;
-    color: BlueViolet;
+    color: #8C30F5;
   }
   
   .headlinetakes1 {
@@ -422,6 +421,15 @@ body {
     .smalltext {
       margin-top: 3% !important;
     }
+  }
+
+  .feather{
+    position: relative;
+    right: 10px;
+  }
+
+  .events-bigcont{
+    margin-bottom: 40px;
   }
   
   .istimage,
@@ -479,46 +487,7 @@ body {
   }
   /* //above event(meghna) */
   
-  /* .dellmargin {
-    margin-top: 5%;
-  }
-  
-  .shreeimage {
-    width: 16rem;
-    height: 20rem;
-  }
-  
-  .shreecement {
-    width: 16rem;
-    height: 20rem;
-    margin-left: 120px;
-    margin-top: -100px;
-  }
-  
-  .secondcolumn {
-    padding: 80px;
-  }
-  
-  .writtenthing {
-    padding: 80px;
-  }
-  
-  .oldsac {
-    background-image: url("img/Vector\ 49.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: inherit;
-    height: auto;
-  }
-  
-  .consultant {
-    font-family: "Outfit", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    color: #c67dff;
-    font-feature-settings: "salt" on, "liga" off; */
-  /* } */
+
   
   
   .img-over{
@@ -533,6 +502,7 @@ body {
     width: 40%;
     height: auto;
     left: 10%;
+    z-index: 0;
   }
   
   .shreecement {
@@ -542,6 +512,7 @@ body {
     height: auto;
     top: 30%;
     left: 40%;
+    z-index: 1;
     
   }
   /* a:link {
@@ -664,7 +635,7 @@ body {
   }
   .number {
     position: relative;
-    right: 5px;
+    right: 20px;
     font-family: "Outfit";
     font-style: normal;
     font-weight: 600;
@@ -739,6 +710,15 @@ body {
     font-size: 18px;
     line-height: 32px;
   }
+
+  .sponsor-img{
+    max-width: 60% !important;
+  }
+
+  .sponsor-cont{
+    margin-bottom: 40px;
+  }
+
   @media only screen and (max-width: 992px) {
     #jod {
       position: absolute;
